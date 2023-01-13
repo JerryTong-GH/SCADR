@@ -159,6 +159,8 @@ tsne_closing;
 
                 pause(0.8);
                 close(progbar);
+                drawnow;
+                pause(0.8);
 
                 %% Iterate tSNE
             case 'iter'
