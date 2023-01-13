@@ -13,3 +13,7 @@ https://www.youtube.com/playlist?list=PLQXaSVKpMlufvOHX_xGMvrYaMX2iwqGzz
 
 Tutorials on how to edit simple features of the app:
 https://www.youtube.com/playlist?list=PLQXaSVKpMlueJDR_1vNk82CpdZR-cUtTx
+
+Contact details:
+mahir.taher@hotmail.co.uk (developer)
+kurt.haas@ubc.ca (PI)
