@@ -23,6 +23,7 @@ arguments
     options.point = 'o'
     % binned plots
     options.zvar_bins double = 30
+    options.bin_across_cell_lines = 0;
     options.binning_type {mustBeMember(options.binning_type,{'percentile','linear'})} = 'percentile';
     % scatter sizes
     options.scatter_size_type {mustBeMember(options.scatter_size_type,{'exponential','linear','log10'})} = 'linear';
@@ -52,6 +53,7 @@ end
 
 %% data conversions
 selected_cell_lines = string(selected_cell_lines);
+n_selected_cell_lines = numel(selected_cell_lines);
 cell_line_names = string(cell_line_names);
 xvar = string(xvar);
 yvar = string(yvar);
@@ -74,6 +76,30 @@ switch class(total_data_sets)
         selected_data = total_data_sets(selected_cell_lines);
 end
 
+%% Calculate bins across zvar if choosing to bin consistently between cell lines
+if options.bin_across_cell_lines
+    zvar_data = cell(1,n_selected_cell_lines);
+    for i = 1:n_selected_cell_lines
+        zvar_data{i} = selected_data{i}(:,[zvar]).Variables';
+    end
+    zvar_data = cell2mat(zvar_data);
+
+    min_zvar = min(zvar_data);
+    max_zvar = max(zvar_data);
+    range_zvar = range(zvar_data);
+
+    switch options.binning_type
+
+        case 'percentile'
+            %percentile spacing
+            zvar_bin_boundaries = prctile(zvar_data,linspace(0,100,options.zvar_bins+1));
+
+        case 'linear'
+            %linear spacing
+            zvar_bin_boundaries = linspace(min_zvar,max_zvar,options.zvar_bins+1);
+    end
+end
+
 %% Do plot
 legendlabel = [];
 sp = {};
@@ -88,16 +114,18 @@ for i = 1:numel(selected_data)
     data = selected_data{i}(:,[zvar,xvar,yvar]);
     data = sortrows(data,zvar);
 
-    switch options.binning_type
-        case 'percentile'
-            %percentile spacing
-            zvar_bin_boundaries = prctile(data.(zvar),linspace(0,100,options.zvar_bins+1));
+    if ~options.bin_across_cell_lines
+        switch options.binning_type
+            case 'percentile'
+                %percentile spacing
+                zvar_bin_boundaries = prctile(data.(zvar),linspace(0,100,options.zvar_bins+1));
 
-        case 'linear'
-            %linear spacing
-            min_zvar = min(data.(zvar));
-            max_zvar = max(data.(zvar));
-            zvar_bin_boundaries = linspace(min_zvar,max_zvar,options.zvar_bins+1);
+            case 'linear'
+                %linear spacing
+                min_zvar = min(data.(zvar));
+                max_zvar = max(data.(zvar));
+                zvar_bin_boundaries = linspace(min_zvar,max_zvar,options.zvar_bins+1);
+        end
     end
 
     zvar_bin_middle = movmean(zvar_bin_boundaries,[0,1],'Endpoints','discard');
@@ -131,10 +159,18 @@ for i = 1:numel(selected_data)
     yz_fit_error(nan_index,:) = [];
 
     zvar_bin_middle(nan_index) = [];
-    %% Combine fits
+    %% Calculate scatter point size
+    
     plot_data = array2table([xz_fit_bin,yz_fit_bin],'VariableNames',[xvar,yvar]);
 
-    scatter_sizes = (zvar_bin_middle-min(data.(zvar)))/range(data.(zvar));
+    % Calculate scatter size based off individual cell lines or across
+    % multiple selected lines
+    if ~options.bin_across_cell_lines
+        scatter_sizes = (zvar_bin_middle-min(data.(zvar)))/range(data.(zvar));
+    else
+        scatter_sizes = ((zvar_bin_middle-min_zvar)/range_zvar);
+    end
+
     switch options.scatter_size_type
         case 'log10'
             scatter_sizes = log10(scatter_sizes(end:-1:1));
@@ -146,6 +182,7 @@ for i = 1:numel(selected_data)
             scatter_sizes = scatter_sizes.*200+10;
     end
 
+    %% Combine fits
     if options.do_scatter
         sp{i} = scatter(options.axis,plot_data.(xvar),plot_data.(yvar),scatter_sizes,options.point, ...
             'SizeDataMode','manual', ...
