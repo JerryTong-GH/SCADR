@@ -4,8 +4,12 @@ arguments (Input)
     file_types_supported
     inputdata_dir
     dataset_dictionary = dictionary(string.empty,dictionary);
+end
+
+arguments(Input)
     options.startup
     options.app
+    options.collate_repeat_cell_line_names = 0;
 end
 %% Select folder
 if ~isfield(options,'startup')
@@ -50,6 +54,7 @@ if isfile(info_path)
     %% Get old and new names
     old_cell_line_names = string(cell_line_renames_table.("Well export"));
     new_cell_line_names = string(cell_line_renames_table.("Variants"));
+    
     %% Add indexing to any repeat names
     [new_cell_line_names] = index_repeat_names(new_cell_line_names);
 

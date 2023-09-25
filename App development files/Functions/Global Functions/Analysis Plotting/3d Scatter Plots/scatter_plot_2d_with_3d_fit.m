@@ -186,7 +186,8 @@ for i = 1:numel(selected_data)
     if options.do_scatter
         sp{i} = scatter(options.axis,plot_data.(xvar),plot_data.(yvar),scatter_sizes,options.point, ...
             'SizeDataMode','manual', ...
-            'MarkerEdgeColor',clr(i,:));
+            'MarkerEdgeColor',clr(i,:), ...
+            'DisplayName',selected_cell_lines(i));
 
         sp{i}.DataTipTemplate.DataTipRows(1).Label = xvar;
         sp{i}.DataTipTemplate.DataTipRows(2).Label = yvar;
@@ -199,7 +200,8 @@ for i = 1:numel(selected_data)
 
     if options.do_scatter_line
         sl{i} = plot(options.axis,plot_data.(xvar),plot_data.(yvar),'--', ...
-            "Color",clr(i,:));
+            "Color",clr(i,:), ...
+            'DisplayName',selected_cell_lines(i));
 
         sl{i}.DataTipTemplate.DataTipRows(1).Label = xvar;
         sl{i}.DataTipTemplate.DataTipRows(2).Label = yvar;
@@ -212,7 +214,8 @@ for i = 1:numel(selected_data)
         er{i} = errorbar(options.axis,plot_data.(xvar),plot_data.(yvar), ...
             yz_fit_error(:,1),yz_fit_error(:,2),xz_fit_error(:,1),xz_fit_error(:,2), ...
             "LineStyle","none", ...
-            "Color",clr(i,:));
+            "Color",clr(i,:), ...
+            'DisplayName',strcat(selected_cell_lines(i),": ",string(options.error_bar_type)));
 
         er{i}.DataTipTemplate.DataTipRows(1).Label = xvar;
         er{i}.DataTipTemplate.DataTipRows(2).Label = yvar;
