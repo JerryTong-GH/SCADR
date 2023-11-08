@@ -1,6 +1,6 @@
 Path	Symbol	Reason
-Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\epp\SuhDbmSplitter.m	mex	undeployable
-Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\epp\SuhModalSplitter.m	mex	undeployable
-Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\umap\InstallMexAndExe.m	mex	undeployable
-Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\umap\KnnFind.m	mex	undeployable
-Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\util\ColorsByName.m	visdiff	undeployable
+SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\epp\SuhDbmSplitter.m	mex	undeployable
+SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\epp\SuhModalSplitter.m	mex	undeployable
+SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\umap\InstallMexAndExe.m	mex	undeployable
+SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\umap\KnnFind.m	mex	undeployable
+SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\util\ColorsByName.m	visdiff	undeployable
