@@ -23,12 +23,13 @@ arguments (Input)
     % Run settings
     options.umap_label_dir = ".\Temp"
     options.show_live_update = 1;
+    options.do_supervised_umap = 1;
     % Plot settings
     options.show_training_divergence = 0;
     options.do_legend = 1;
 end
 
-% tsne options
+% UMAP options
 arguments (Input)
     umap_options.n_components = 2;
     % Parameters
@@ -142,10 +143,17 @@ for i = 1:numel(selected_cell_lines)
 end
 fclose(fid);
 
-[UMAP_output,umap_obj] = run_umap(master_table(:,[selected_markers;"variant_ID_num"]).Variables, ...
-    'parameter_names',cellstr(selected_markers),'label_column','end', ...
-    'label_file',char(label_file_dir), ...
-    umap_options_args{:});
+if options.do_supervised_umap
+    [UMAP_output,umap_obj] = run_umap(master_table(:,[selected_markers;"variant_ID_num"]).Variables, ...
+        'parameter_names',cellstr(selected_markers),'label_column','end', ...
+        'label_file',char(label_file_dir), ...
+        umap_options_args{:});
+else
+    [UMAP_output,umap_obj] = run_umap(master_table(:,selected_markers).Variables, ...
+        'parameter_names',cellstr(selected_markers), ...
+        'label_file',char(label_file_dir), ...
+        umap_options_args{:});
+end
 
 % [UMAP_output,umap_obj] = run_umap(master_table(:,selected_markers).Variables, ...
 %     'parameter_names',cellstr(selected_markers), ...
@@ -195,35 +203,35 @@ closing_cleanup;
 
     function plot_the_umap(plotdata)
         temp_ax = nexttile(tiles,1);
-            switch umap_options.n_components
-                case 2
-                    gscatter(temp_ax,plotdata(:,1),plotdata(:,2),variant_ID',clr);
-                    if ~options.do_legend
-                        legend(temp_ax,'hide');
-                    end
-                    drawnow;
-                case 3
-                    tsp = [];
-                    start = 1;
-                    for i = 1:numel(selected_cell_lines)
-                        idx = start:sum(num_cells(1:i));
-                        sp = scatter3(temp_ax,plotdata(idx,1),plotdata(idx,2),plotdata(idx,3),15, ...
-                            clr(repelem(i,num_cells(i))',:),'filled');
-                        start = sum(num_cells(1:i))+1;
-                        hold(temp_ax,"on");
-                        tsp = [tsp,sp];
-                    end
-                    if options.do_legend
-                        legend(temp_ax,tsp,selected_cell_lines);
-                    end
-                    drawnow;
-                    hold(temp_ax,"off");
-            end
+        switch umap_options.n_components
+            case 2
+                gscatter(temp_ax,plotdata(:,1),plotdata(:,2),variant_ID',clr);
+                if ~options.do_legend
+                    legend(temp_ax,'hide');
+                end
+                drawnow;
+            case 3
+                tsp = [];
+                start = 1;
+                for i = 1:numel(selected_cell_lines)
+                    idx = start:sum(num_cells(1:i));
+                    sp = scatter3(temp_ax,plotdata(idx,1),plotdata(idx,2),plotdata(idx,3),15, ...
+                        clr(repelem(i,num_cells(i))',:),'filled');
+                    start = sum(num_cells(1:i))+1;
+                    hold(temp_ax,"on");
+                    tsp = [tsp,sp];
+                end
+                if options.do_legend
+                    legend(temp_ax,tsp,selected_cell_lines);
+                end
+                drawnow;
+                hold(temp_ax,"off");
+        end
 
-            if options.inspect_selection.Value
-                selection_inspection(temp_ax,plotdata,variant_ID,master_table);
-                options.inspect_selection.Value = 0;
-            end
+        if options.inspect_selection.Value
+            selection_inspection(temp_ax,plotdata,variant_ID,master_table);
+            options.inspect_selection.Value = 0;
+        end
     end
 
     function closing_cleanup

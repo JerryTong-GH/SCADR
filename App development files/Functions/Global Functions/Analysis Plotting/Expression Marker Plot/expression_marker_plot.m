@@ -41,6 +41,8 @@ arguments (Input)
     options.fit_on_smooth = 1;
     options.fit_type {mustBeMember(options.fit_type,{'poly1','poly11','poly2','linearinterp','cubicinterp','smoothingspline','lowess'})} = 'poly1';
     options.pred_interval = 0.95;
+    options.prediction_bounds_type {mustBeMember(options.prediction_bounds_type,{'observation','functional'})} = 'observation';
+    options.prediction_bounds_simultaneous {mustBeMember(options.prediction_bounds_simultaneous,[1,0])} = 0;
     % do legend
     options.legend_labels
     % which plot to do
@@ -67,6 +69,13 @@ if ~isfield(options,'axis')
     no_app = 1;
     fig = figure("Name",options.fig_name);
     options.axis = axes(fig);
+end
+
+%% Settings conversions
+if options.prediction_bounds_simultaneous
+    options.prediction_bounds_simultaneous = "on";
+else
+    options.prediction_bounds_simultaneous = "off";
 end
 
 %% Data conversions
@@ -208,7 +217,7 @@ for i = 1:numel(selected_cell_lines)
                     %fit on segment
                     [fitobject,gof,output] = fit(temp_x,temp_y,options.fit_type);
                     %generate and save plot data
-                    [yci, y_pred] = predint(fitobject,temp_x,options.pred_interval,'observation','off');
+                    [yci, y_pred] = predint(fitobject,temp_x,options.pred_interval,options.prediction_bounds_type,options.prediction_bounds_simultaneous);
                 catch
                     fitobject = cfit;
                     gof = struct("sse",nan,"rsquare",nan,"dfe",nan,"adjrsquare",nan,"rmse",nan);
