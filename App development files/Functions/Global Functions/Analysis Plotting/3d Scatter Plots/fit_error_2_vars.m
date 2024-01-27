@@ -1,4 +1,4 @@
-function [xz_fit_bin,xz_fit_error] = fit_error_2_vars(selected_data,zvar,xvar,zvar_bins,zvar_bin_boundaries,options)
+function [xz_fit_bin,xz_fit_error,bin_sample_data] = fit_error_2_vars(selected_data,zvar,xvar,zvar_bins,zvar_bin_boundaries,options)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 %% Arguments
@@ -34,6 +34,8 @@ end
 
 xz_fit_bin = nan(zvar_bins,1);
 xz_fit_error = zeros(zvar_bins,2);
+bin_sample_data = cell(zvar_bins,1);
+
 for i = 1:(zvar_bins)
     lower_cond = selected_data.(zvar)>=zvar_bin_boundaries(i);
     upper_cond = selected_data.(zvar)<=zvar_bin_boundaries(i+1);
@@ -45,6 +47,7 @@ for i = 1:(zvar_bins)
     end
 
     sample_data = selected_data((lower_cond&upper_cond),xvar);
+    bin_sample_data{i} = selected_data((lower_cond&upper_cond),[zvar,xvar]);
     
     switch options.error_bar_type
         case 'std'
