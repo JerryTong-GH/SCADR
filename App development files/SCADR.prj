@@ -77,7 +77,6 @@
     <fileset.resources>
       <file>${PROJECT_ROOT}\Application Resources</file>
       <file>${PROJECT_ROOT}\Functions</file>
-      <file>${PROJECT_ROOT}\Temp</file>
     </fileset.resources>
     <fileset.package />
     <fileset.depfun />
@@ -88,7 +87,7 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023a</root>
+      <root>C:\Program Files\MATLAB\R2023b</root>
       <toolboxes />
     </matlab>
     <platform>
