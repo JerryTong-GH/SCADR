@@ -44,7 +44,7 @@ end
 
 arguments
     % plot type
-    options_2d.type_2d (1,:) string {mustBeMember(options_2d.type_2d,{'scatter','bin scatter','3d histogram'})} = 'scatter'
+    options_2d.type_2d (1,:) string {mustBeMember(options_2d.type_2d,{'scatter','bin scatter','3d histogram','density scatter'})} = 'scatter'
     options_2d.markertype_2d = 'x'
     % 2d binned plots
     options_2d.do_bins_2d double
@@ -90,7 +90,7 @@ yvar = string(yvar);
 zvar = string(zvar);
 
 %% Figure out how many dimensions to plot
-remaining_vars = unique([xvar,yvar,zvar]);
+remaining_vars = unique([xvar,yvar,zvar],'stable');
 
 switch numel(remaining_vars)
     case 1

@@ -22,7 +22,7 @@ end
 
 arguments
     % plot type
-    options_2d.type_2d (1,:) string {mustBeMember(options_2d.type_2d,{'scatter','bin scatter','3d histogram'})} = 'scatter'
+    options_2d.type_2d (1,:) string {mustBeMember(options_2d.type_2d,{'scatter','bin scatter','3d histogram','density scatter'})} = 'scatter'
     options_2d.markertype_2d = 'x'
     % 2d binned plots
     options_2d.do_bins_2d double
@@ -127,10 +127,22 @@ for i = 1:numel(selected_cell_lines)
                 else
                     histogram2(options.axis,xvar_data,yvar_data,'FaceColor','flat');
                 end
+
         end
         tp = [tp,p];
         legend_labels = [legend_labels, selected_cell_lines(i)];
     end
+end
+
+if cell_count==0
+    return
+end
+% Do a density scatter if selected
+if isequal(options_2d.type_2d,"density scatter")
+    combined_plot_data = dataset_selection_2_table(total_data_sets,selected_cell_lines,[xvar,yvar]);
+    dscatter(combined_plot_data.(xvar),combined_plot_data.(yvar), ...
+        'MARKER',options_2d.markertype_2d, ...
+        "axes_handle",options.axis);
 end
 
 %% Add plot labels

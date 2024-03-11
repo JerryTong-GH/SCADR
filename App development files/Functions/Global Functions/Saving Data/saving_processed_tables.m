@@ -18,7 +18,7 @@ switch class(total_data_sets)
 
     case 'cell'
         for i = 1:numel(cell_line_names)
-            writetable(total_data_sets{i},strcat(outputdata_dir,data_set_name,"\",cell_line_names(i),save_file_type))
+            writetable(total_data_sets{i},fullfile(outputdata_dir,data_set_name,strcat(cell_line_names(i),save_file_type)))
         end
 
     case 'dictionary'

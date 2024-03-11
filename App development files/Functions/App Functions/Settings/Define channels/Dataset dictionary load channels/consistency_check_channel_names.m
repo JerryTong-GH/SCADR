@@ -33,7 +33,7 @@ for i = 1:dataset_dictionaries.numEntries
 
     dataset_pack = dataset_dictionaries(dataset_list(i));
 
-    if dataset_pack.numEntries<=1
+    if dataset_pack.numEntries<1
         continue
     else
         cell_line_names = dataset_pack.keys;

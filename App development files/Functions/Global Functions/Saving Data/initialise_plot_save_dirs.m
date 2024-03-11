@@ -16,7 +16,7 @@ end
 cell_line_names = string(cell_line_names);
 
 %% Make data output in data set folder name
-[~,~,~] = mkdir(strcat(outputdata_dir,data_set_name));
+[~,~,~] = mkdir(fullfile(outputdata_dir,data_set_name));
 
 % %% Make folder for correlation matrix
 % mkdir(strcat(outputplot_dir,data_set_name,"\","Correlation Matrix"))
