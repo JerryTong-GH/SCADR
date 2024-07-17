@@ -44,7 +44,7 @@ end
 
 arguments
     % plot type
-    options_2d.type_2d (1,:) string {mustBeMember(options_2d.type_2d,{'scatter','bin scatter','3d histogram','density scatter'})} = 'scatter'
+    options_2d.type_2d (1,:) string {mustBeMember(options_2d.type_2d,{'scatter','bin scatter','3d histogram','density scatter','bin bars'})} = 'scatter'
     options_2d.markertype_2d = 'x'
     % 2d binned plots
     options_2d.do_bins_2d double
@@ -56,6 +56,9 @@ arguments
     options_2d.num_histogram_bins_2d logical
     options_2d.do_histogram_bin_width_2d
     options_2d.histogram_bin_width_2d
+    % bin bars settings
+    options_2d.binbar_nbins_2d = 10;
+    options_2d.binbar_bin_method_2d (1,:) string {mustBeMember(options_2d.binbar_bin_method_2d,{'linear','quantile'})} = 'linear'
     % do plots
     options_2d.do_scatter_2d = 1;
     options_2d.do_legend_2d = 1;
@@ -119,8 +122,6 @@ switch numel(remaining_vars)
 
         [~,cell_count] = scatter_plot_3d(total_data_sets,cell_line_names,selected_cell_lines,xvar,yvar,zvar,"axis",options.axis,plot_params{:});
 end
-
-
 
 end
 

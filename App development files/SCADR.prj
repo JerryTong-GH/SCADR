@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\SCADR.prj" location="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files" name="SCADR" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="2719028479" file="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files\SCADR.prj" location="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App development files" name="SCADR" preferred-package-location="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App installation files\SCADR\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SCADR</param.appname>
     <param.icon>${PROJECT_ROOT}\SCADR_resources\icon.ico</param.icon>
     <param.icons>
@@ -12,7 +12,8 @@
     <param.authnamewatermark>Haas Lab</param.authnamewatermark>
     <param.email>kurt.haas@ubc.ca</param.email>
     <param.company>Haas Lab UBC</param.company>
-    <param.summary>Single cell analysis app</param.summary>
+    <param.summary>Single cell analysis app
+INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant admin privileges to write files).</param.summary>
     <param.description>INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant admin privileges to write files).</param.description>
     <param.screenshot>${PROJECT_ROOT}\Application Resources\Toolbar Images\App Logo Corbin.png</param.screenshot>
     <param.guid />
@@ -80,7 +81,15 @@
       <file>${PROJECT_ROOT}\Functions</file>
     </fileset.resources>
     <fileset.package />
-    <fileset.depfun />
+    <fileset.depfun>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\graph\children.m</file>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\graph\dfs.m</file>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\graph\mk_rooted_tree.m</file>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\graph\neighbors.m</file>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\graph\test.m</file>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\KPMstats\sample_discrete.m</file>
+      <file>C:\Users\coolm\Documents\Uni\PhD\Matlab\mcm-train-app\Functions\Community\bnt-master\KPMtools\pick.m</file>
+    </fileset.depfun>
     <build-deliverables>
       <file location="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App installation files\SCADR\for_testing" name="readme.txt" optional="true">C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App installation files\SCADR\for_testing\readme.txt</file>
       <file location="C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App installation files\SCADR\for_testing" name="splash.png" optional="false">C:\Users\coolm\Documents\Uni\PhD\Matlab\SCiYA\App installation files\SCADR\for_testing\splash.png</file>
