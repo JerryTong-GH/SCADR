@@ -1,0 +1,2 @@
+Path	Symbol	Reason
+SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\util\ColorsByName.m	visdiff	undeployable

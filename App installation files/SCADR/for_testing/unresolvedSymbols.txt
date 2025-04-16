@@ -1,6 +1,6 @@
 Path	Symbol	Reason
-SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\epp\SuhDbmSplitter.m	mex	undeployable
-SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\epp\SuhModalSplitter.m	mex	undeployable
-SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\umap\InstallMexAndExe.m	mex	undeployable
-SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\umap\KnnFind.m	mex	undeployable
 SCADR\Functions\External packages\Uniform Manifold Approximation and Projection (UMAP)\util\ColorsByName.m	visdiff	undeployable
+SCADR\Functions\External packages\bnt-master\netlab3.3\demprgp.m	watchon	undeployable
+SCADR\Functions\External packages\bnt-master\netlab3.3\demprgp.m	watchoff	undeployable
+SCADR\Functions\External packages\bnt-master\netlab3.3\demprior.m	watchon	undeployable
+SCADR\Functions\External packages\bnt-master\netlab3.3\demprior.m	watchoff	undeployable
