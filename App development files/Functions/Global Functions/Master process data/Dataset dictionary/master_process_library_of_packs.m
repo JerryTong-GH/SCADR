@@ -37,7 +37,7 @@ arguments
     Normalisingchannelname {mustBeA(Normalisingchannelname,{'string','char'})}
     marker_do_normalise {dictionary}
     %decide whether to log data
-    do_log_data {double,logical}
+    do_log_data {mustBeVector(do_log_data)}
     %decide whether to zero adjust
     do_zero_adjust
     %filter order
@@ -98,7 +98,7 @@ for j = 1:numel(data_set_list)
     variant_pack_quantile_filter_bounds, ... lower and upper quantile marker filters
     variant_pack_polygon_filter, ... %polygon filter
     Normalisingchannelname, marker_do_normalise, ... normalising channel name and which channels to normalise
-    do_log_data, ... %whether to log data
+    do_log_data(j), ... %whether to log data
     do_zero_adjust, ...
     filter_order);  %zero adjust
 
@@ -134,7 +134,7 @@ for j = 1:numel(data_set_list)
     process_settings.Normalisingchannelname = Normalisingchannelname;
     process_settings.marker_do_normalise = marker_do_normalise;
     %decide whether to log data
-    process_settings.do_log_data = do_log_data;
+    process_settings.do_log_data = do_log_data(j);
 
     save(fullfile(dataset_outputdata_dir,'Settings.mat'),'process_settings')
 
