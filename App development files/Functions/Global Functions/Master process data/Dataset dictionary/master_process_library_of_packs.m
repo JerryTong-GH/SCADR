@@ -109,7 +109,7 @@ for j = 1:numel(data_set_list)
     loadbar.Message = "Saving Data...";
     loadbar.Indeterminate = 'on';
     %% Write variant pack into tables
-    saving_processed_tables(variant_pack,cell_line_names,outputdata_dir,Datafiletype,data_set_name)
+    saving_processed_tables(variant_pack,cell_line_names,outputdata_dir,Datafiletype,data_set_name,do_log_data);
 
     %% Save variant pack process settings
     %process_settings
