@@ -62,6 +62,7 @@ arguments
     % do plots
     options_2d.do_scatter_2d = 1;
     options_2d.do_legend_2d = 1;
+    options_2d.save_mean_median
 end
 
 arguments
