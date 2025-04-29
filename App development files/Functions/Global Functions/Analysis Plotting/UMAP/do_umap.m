@@ -72,11 +72,9 @@ else
 end
 
 %% Initial checks
-if numel(selected_cell_lines)<1
-    UMAP_output = table([],string.empty,'VariableNames',["Position","Category"]);
-    umap_obj = [];
-    tiles = [];
-    return
+if numel(selected_cell_lines) < 1
+    errordlg('No cell lines selected. Please select at least one cell line to proceed.', 'Selection Error');
+    error('PCA aborted due to empty cell line selection.');
 end
 
 if umap_options.spread<umap_options.min_dist
