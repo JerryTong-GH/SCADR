@@ -10,7 +10,7 @@ This repository contains:
 
 Matlab toolbox requirement:
 
-You will need the Mapping Toolbox and Statistics and Machine Learning Toolbox. Both toolbox are free - please make sure to install it or some functions (PCA) will display wrong result.
+You will need the Mapping Toolbox and Statistics and Machine Learning Toolbox. Both toolboxs are free - please make sure to install it or some functions (PCA) will display wrong result.
 
 This is a playlist of tutorials on how to use the app:
 https://www.youtube.com/playlist?list=PLQXaSVKpMlufvOHX_xGMvrYaMX2iwqGzz
