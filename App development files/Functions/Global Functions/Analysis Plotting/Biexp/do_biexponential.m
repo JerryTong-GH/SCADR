@@ -4,7 +4,7 @@ arguments (Input)
     total_data_sets {mustBeA(total_data_sets, {'cell', 'dictionary'})}
     selected_cell_lines {mustBeA(selected_cell_lines, {'string', 'cell'})}
     selected_markers {mustBeA(selected_markers, {'string', 'char'})}
-    dimension {mustBeTextScalar}  % '2' or '3'
+    dimension 
 end
 
 arguments (Input)
@@ -18,9 +18,8 @@ arguments (Input)
 end
 
 %% Convert dimension
-dimension = str2double(dimension);
-if ~ismember(dimension, [2, 3])
-    error('Biexponential plot dimension must be "2" or "3".');
+if ~ismember(dimension, [2])
+    error('Biexponential plot dimension must be "2".');
 end
 
 fig = 0;
@@ -95,15 +94,18 @@ for i = 1:numel(selected_cell_lines)
     idx = start:sum(num_cells(1:i));
     points = biexp_output(idx, 1:dimension);
     color = clr(repelem(i, num_cells(i))', :);
-    
+
     if dimension == 3
         sp = scatter3(ax, points(:,1), points(:,2), points(:,3), ...
             15, color, 'filled', 'MarkerFaceAlpha', 0.4);
-        xlabel(ax, 'Dim 1'); ylabel(ax, 'Dim 2'); zlabel(ax, 'Dim 3');
+        xlabel(ax, sprintf('%s (Biexp, log_{10})', selected_markers(1)));
+        ylabel(ax, sprintf('%s (Biexp, log_{10})', selected_markers(2)));
+        zlabel(ax, sprintf('%s (Biexp, log_{10})', selected_markers(3)));
     else
         sp = scatter(ax, points(:,1), points(:,2), ...
             15, color, 'filled', 'MarkerFaceAlpha', 0.4);
-        xlabel(ax, 'Dim 1'); ylabel(ax, 'Dim 2');
+        xlabel(ax, sprintf('%s (Biexp, log_{10})', selected_markers(1)));
+        ylabel(ax, sprintf('%s (Biexp, log_{10})', selected_markers(2)));
     end
 
     start = sum(num_cells(1:i)) + 1;
