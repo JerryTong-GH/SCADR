@@ -10,7 +10,7 @@ arguments
     outputdata_dir {mustBeA(outputdata_dir,{'string','char'})}
     save_file_type {mustBeA(save_file_type,{'string','char'})}
     data_set_name {mustBeA(data_set_name,{'string','char'})}
-    do_log_table {mustBeVector(do_log_table)}
+    do_log_table {mustBeVector(do_log_table)} = 0
 end
 
 %% Function Starts
@@ -23,9 +23,14 @@ switch class(total_data_sets)
         end
 
     case 'dictionary'
-    % Ensure output directory exists
-    % Ensure output directory exists
-    output_path = fullfile(outputdata_dir, data_set_name);
+        if do_log_table == 0
+            cell_line_names = total_data_sets.keys;
+        total_data_sets = total_data_sets.values;
+            for i = 1:numel(cell_line_names)
+                writetable(total_data_sets{i},fullfile(outputdata_dir,data_set_name,strcat(cell_line_names(i),save_file_type)))
+            end
+        else
+            output_path = fullfile(outputdata_dir, data_set_name);
     if ~exist(output_path, 'dir')
         mkdir(output_path);
     end
@@ -62,6 +67,11 @@ switch class(total_data_sets)
         filename = fullfile(output_path, strcat(clean_key, save_file_type));
         writetable(tbl_filtered, filename);
     end
+
+        end
+    % Ensure output directory exists
+    % Ensure output directory exists
+    
 
 end
 

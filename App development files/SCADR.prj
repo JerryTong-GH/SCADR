@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\jerry\Documents\GitHub\SCiYA\App development files\SCADR.prj" location="C:\Users\jerry\Documents\GitHub\SCiYA\App development files" name="SCADR" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="C:\Users\Jerry\Desktop\SCiYA\App development files\SCADR.prj" location="C:\Users\Jerry\Desktop\SCiYA\App development files" name="SCADR" preferred-package-location="C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SCADR</param.appname>
     <param.icon />
     <param.icons />
@@ -17,10 +17,10 @@ INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant a
     <param.logo>${PROJECT_ROOT}\Application Resources\Toolbar Images\App install logo.png</param.logo>
     <param.install.notes>INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant admin privileges to write files).</param.install.notes>
     <param.target.install.notes />
-    <param.intermediate>C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing</param.intermediate>
-    <param.files.only>C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_redistribution_files_only</param.files.only>
-    <param.output>C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_redistribution</param.output>
-    <param.logdir>C:\Users\jerry\Desktop\SCADR</param.logdir>
+    <param.intermediate>C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing</param.intermediate>
+    <param.files.only>C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_redistribution_files_only</param.files.only>
+    <param.output>C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_redistribution</param.output>
+    <param.logdir>C:\Users\Jerry\Desktop\SCiYA\App installation files</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
@@ -78,9 +78,9 @@ INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant a
     <fileset.package />
     <fileset.depfun />
     <build-deliverables>
-      <file location="C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing" name="readme.txt" optional="true">C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing\readme.txt</file>
-      <file location="C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing" name="SCADR.exe" optional="false">C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing\SCADR.exe</file>
-      <file location="C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing" name="splash.png" optional="false">C:\Users\jerry\Documents\GitHub\SCiYA\App installation files\SCADR\for_testing\splash.png</file>
+      <file location="C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing" name="splash.png" optional="false">C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing\splash.png</file>
+      <file location="C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing" name="SCADR.exe" optional="false">C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing\SCADR.exe</file>
+      <file location="C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing" name="readme.txt" optional="true">C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing\readme.txt</file>
     </build-deliverables>
     <workflow />
     <matlab>
