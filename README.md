@@ -14,7 +14,15 @@ The `SCADR` library analyzes dose-dependent single-cell phosphoprotein profiles 
 - **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
 
 ## Installation (to be done)
-Install with pip
+SCADR requires MatLab with > 2022b version. The software might be able to run on older versions but integrity of the software cannot be ensured. 
+The following list of add-on library need to be installed before the installation of the program itself. These can be found in the add-on tab in MatLab and all library used in the software are free to be installed.
+- Curve Fitting Toolbox (ver. 22.2 or newer)
+- Data Acquisition Toolbox (ver. 22.2 or newer)
+- Image Processing Toolbox (ver. 22.2 or newer)
+- Mapping Toolbox (ver. 22.2 or newer)
+- Statistics and Machine Learning Toolbox (ver. 22.2 or newer)
+
+The installation file can be found in  
 ```bash
 pip install slap2-utils
 ```
