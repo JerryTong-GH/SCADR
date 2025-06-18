@@ -61,8 +61,8 @@ This project is licensed under the Mozilla Public License Version 2.0 - see the 
 This library was developed and maintained by Mahir Taher and Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
 
 # Contact details:
-Mahir Taher: mahir.taher@hotmail.co.uk (developer)
-Jerry Tong: jerrytong0810@gmail.com (developer)
-Corbin Glufka: corbinglufka@outlook.com (owner of default dataset)
-kurt.haas@ubc.ca (PI)
+- Mahir Taher: mahir.taher@hotmail.co.uk (developer)
+- Jerry Tong: jerrytong0810@gmail.com (developer)
+- Corbin Glufka: corbinglufka@outlook.com (owner of default dataset)
+- kurt.haas@ubc.ca (PI)
 
