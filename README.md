@@ -13,8 +13,7 @@ The `SCADR` library analyzes dose-dependent single-cell phosphoprotein profiles 
 - **Pairwise Correlation and Heatmaps**: SCADR quantifies co-regulation and signaling cross-talk between phosphoproteins, useful for identifying mechanistic insights and variant clustering.
 - **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
 
-## Installation (to be done)
-System Requirements and Installation Instructions for SCADR
+## Installation 
 
 SCADR requires MATLAB version 2022b or later. While the software may run on older versions, we cannot guarantee full functionality or integrity in those environments.
 
@@ -35,6 +34,7 @@ The SCADR installation file is located in the App Installation File directory on
 By default, SCADR includes the dataset used in the publication:
 “Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
 Several figures from this study are available in the Demo section for reference.
+
 ## Pull Request and Usage
 
 Pull requests are welcome. Please report bugs, as we're still refining this library over time.
@@ -60,7 +60,7 @@ This project is licensed under the Mozilla Public License Version 2.0 - see the 
 ## Credits and Acknowledgements
 This library was developed and maintained by Mahir Taher and Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
 
-Contact details:
+# Contact details:
 Mahir Taher: mahir.taher@hotmail.co.uk (developer)
 Jerry Tong: jerry.tong@ubc.ca (developer)
 kurt.haas@ubc.ca (PI)
