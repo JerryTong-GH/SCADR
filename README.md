@@ -44,11 +44,11 @@ Pull requests are welcome. Please report bugs, as we're still refining this libr
 The following video playlists provide tutorials on how to use and customize the SCADR app:
 
 Getting Started with SCADR:
-[Tutorial Playlist – General App Usage] (https://www.youtube.com/playlist?list=PLQXaSVKpMlufvOHX_xGMvrYaMX2iwqGzz
+[Tutorial Playlist – General App Usage](https://www.youtube.com/playlist?list=PLQXaSVKpMlufvOHX_xGMvrYaMX2iwqGzz
 )
 
 Editing SCADR Features:
-[Tutorial Playlist – Customization and Feature Editing] (https://www.youtube.com/playlist?list=PLQXaSVKpMlueJDR_1vNk82CpdZR-cUtTx
+[Tutorial Playlist – Customization and Feature Editing](https://www.youtube.com/playlist?list=PLQXaSVKpMlueJDR_1vNk82CpdZR-cUtTx
 )
 
 Please note that these playlists are not actively maintained. As SCADR continues to evolve and new functionalities are added, some content may become outdated. However, these videos still serve as a helpful starting point for users new to the platform.
