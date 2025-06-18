@@ -3,17 +3,16 @@
 Currently editing in progress
 
 ## Overview
-The `SCADR` library analyzes dose-dependent single-cell phosphoprotein profiles from flow cytometry data. It is focuses on capturing the phosphoprotein profile of each cell so as to examine the impact of gene expression on signaling pathways at a single cell level. 
+The `slap2-utils` library is designed to facilitate the reading of SLAP2 (Scanned Line Angular Projection Microscopy version 2) binary files using Python. This utility aims to support researchers and developers working with data from SLAP2 two-photon microscopes by providing an interface to manipulate and analyze these files directly in Python as an alternative to a Matlab-based workflow. The SLAP2 microscope is a commercially available kit from MBF Bioscience (https://www.mbfbioscience.com/products/slap2). The detailed documentation can be found by clicking the documentation icon above `Overview`.
 
 ## Features
-- **Single Cell Resolution**: SCADR analyzes individual cell data rather than population medians, capturing subtle functional differences between variants.
-- **Dose-response Analysis**: SCADR links protein expression levels (e.g., from HA-tagged constructs) to downstream signaling outputs using smooth regression methods (e.g., rLOESS).
-- **Multiparameter Profiling**: SCADR supports simultaneous assessment of multiple phosphoproteins (e.g., pAKT, pS6, pERK, pCREB, pp38) within each cell.
-- **Variant Classification**: SCADR distinguishes the functional impacts of gene variants (e.g., PTEN missense mutations) on canonical and non-canonical signaling pathways.
-- **Pairwise Correlation and Heatmaps**: SCADR quantifies co-regulation and signaling cross-talk between phosphoproteins, useful for identifying mechanistic insights and variant clustering.
-- **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
+- **Reading SLAP2 Binary Files**: Convert SLAP2 proprietary binary data into accessible formats for Python.
+- **Metadata Parsing**: Extract and utilize metadata associated with SLAP2 data files.
+- **Data Manipulation**: Tools to manipulate and process data points read from the binary file.
+- **Trace Extraction**: Tools to extract and generate traces from ROIs imaged in integrated scan mode.
+- **Data Inspection**: A GUI to inspect and review data stored in the binary file.
 
-## Installation (to be done)
+## Installation
 Install with pip
 ```bash
 pip install slap2-utils
@@ -25,17 +24,16 @@ Clone this repository
 ```bash
 git clone https://github.com/Peter-Hogg/SLAP2_Utils.git
 ```
+## Contributing
 
-## Pull Request and Usage
-
-Pull requests are welcome. Please report bugs, as we're still refining this library over time.
+Contributions are welcome! If you'd like to contribute, please fork the repository and use a new branch for your contributions. Pull requests are welcome. Please report bugs, as we're still refining this library over time.
 
 ## License
 
 This project is licensed under the Mozilla Public License Version 2.0 - see the LICENSE.md file for details.
 
 ## Credits and Acknowledgements
-This library was developed and maintained by Mahir Taher and Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
+This library was developed by Peter Hogg and Jerry Tong. It's a rework of several Matlab tools from MBF with added utility functions. Thanks to all contributors who have helped in refining this tool and helped with the project.
 
 
 
