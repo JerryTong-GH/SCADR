@@ -14,18 +14,27 @@ The `SCADR` library analyzes dose-dependent single-cell phosphoprotein profiles 
 - **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
 
 ## Installation (to be done)
-SCADR requires MatLab with > 2022b version. The software might be able to run on older versions but integrity of the software cannot be ensured. 
-The following list of add-on library need to be installed before the installation of the program itself. These can be found in the add-on tab in MatLab and all library used in the software are free to be installed.
-- Curve Fitting Toolbox (ver. 22.2 or newer)
-- Data Acquisition Toolbox (ver. 22.2 or newer)
-- Image Processing Toolbox (ver. 22.2 or newer)
-- Mapping Toolbox (ver. 22.2 or newer)
-- Statistics and Machine Learning Toolbox (ver. 22.2 or newer)
+System Requirements and Installation Instructions for SCADR
 
-The installation file can be found in App Installation File directory from the main page. Follow the instructions on screen to complete the installation.
+SCADR requires MATLAB version 2022b or later. While the software may run on older versions, we cannot guarantee full functionality or integrity in those environments.
 
-Default installations include the first dataset used for the paper "Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase – dependent PTEN functions". Some of the results in the paper are listed in the demo section.
+Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
 
+Curve Fitting Toolbox (v22.2 or newer)
+
+Data Acquisition Toolbox (v22.2 or newer)
+
+Image Processing Toolbox (v22.2 or newer)
+
+Mapping Toolbox (v22.2 or newer)
+
+Statistics and Machine Learning Toolbox (v22.2 or newer)
+
+The SCADR installation file is located in the App Installation File directory on the main page. Follow the on-screen prompts to complete the installation process.
+
+By default, SCADR includes the dataset used in the publication:
+“Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
+Several figures from this study are available in the Demo section for reference.
 ## Pull Request and Usage
 
 Pull requests are welcome. Please report bugs, as we're still refining this library over time.
