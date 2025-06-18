@@ -22,21 +22,23 @@ The following list of add-on library need to be installed before the installatio
 - Mapping Toolbox (ver. 22.2 or newer)
 - Statistics and Machine Learning Toolbox (ver. 22.2 or newer)
 
-The installation file can be found in  
-```bash
-pip install slap2-utils
-```
+The installation file can be found in App Installation File directory from the main page. Follow the instructions on screen to complete the installation.
 
-
-Clone this repository
-
-```bash
-git clone https://github.com/Peter-Hogg/SLAP2_Utils.git
-```
+Default installations include the first dataset used for the paper "Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase – dependent PTEN functions". Some of the results in the paper are listed in the demo section.
 
 ## Pull Request and Usage
 
 Pull requests are welcome. Please report bugs, as we're still refining this library over time.
+
+## Extras
+
+This is a playlist of tutorials on how to use the app. 
+https://www.youtube.com/playlist?list=PLQXaSVKpMlufvOHX_xGMvrYaMX2iwqGzz
+
+Tutorials on how to edit simple features of the app:
+https://www.youtube.com/playlist?list=PLQXaSVKpMlueJDR_1vNk82CpdZR-cUtTx
+
+Both playlists are not actively updated as SCADR may incorporate new functionalities as time passes, but it might be useful as a starting point.
 
 ## License
 
@@ -45,24 +47,8 @@ This project is licensed under the Mozilla Public License Version 2.0 - see the 
 ## Credits and Acknowledgements
 This library was developed and maintained by Mahir Taher and Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
 
-
-
-This repository contains:
-- All scripts, functions, images, sounds, and sub-apps contributing to the main MATLAB SCiYA app under 'App development files' (needs changing)
-- All files needed to install the app as a standalone programme within 'App installation files'
-- 'Example dataset libraries' to use with the app
-- Some draft 'Result figures' generated from the app
-- A template well info file, that can be copied and adjusted to your particular dataset
-
-This is a playlist of tutorials on how to use the app:
-https://www.youtube.com/playlist?list=PLQXaSVKpMlufvOHX_xGMvrYaMX2iwqGzz
-
-Tutorials on how to edit simple features of the app:
-https://www.youtube.com/playlist?list=PLQXaSVKpMlueJDR_1vNk82CpdZR-cUtTx
-
 Contact details:
 Mahir Taher: mahir.taher@hotmail.co.uk (developer)
 Jerry Tong: jerry.tong@ubc.ca (developer)
 kurt.haas@ubc.ca (PI)
-
 
