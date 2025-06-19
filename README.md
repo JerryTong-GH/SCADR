@@ -19,10 +19,6 @@ SCADR requires MATLAB version 2022b or later. While the software may run on olde
 
 Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
 
-- *Curve Fitting Toolbox* (v22.2 or newer)
-
-- *Data Acquisition Toolbox* (v22.2 or newer)
-
 - *Image Processing Toolbox* (v22.2 or newer)
 
 - *Mapping Toolbox* (v22.2 or newer)
