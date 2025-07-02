@@ -1,0 +1,24 @@
+name: MATLAB Function Tests
+
+on:
+  push:
+    branches: [ Devs ]
+  pull_request:
+    branches: [ Devs ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up MATLAB
+      uses: matlab-actions/setup-matlab@v2
+
+    - name: Run Unit Tests
+      uses: matlab-actions/run-tests@v2
+      with:
+        source-folder: functions
+        test-folder: tests
