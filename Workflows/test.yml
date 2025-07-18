@@ -21,4 +21,4 @@ jobs:
       uses: matlab-actions/run-tests@v2
       with:
         source-folder: functions
-        test-folder: tests
+        test-folder: Development/tests
