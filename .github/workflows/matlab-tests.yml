@@ -2,9 +2,7 @@ name: MATLAB Tests
 
 on:
   push:
-    branches:
-      - main
-      - Devs
+    branches: [main, Devs]
   pull_request:
 
 jobs:
@@ -15,8 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup MATLAB
+      - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v1
 
-      - name: Run tests
+      - name: Run MATLAB tests
         run: matlab -batch "results = runtests('test'); exit(~all([results.Passed]));"
+
