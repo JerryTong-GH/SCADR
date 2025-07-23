@@ -18,6 +18,9 @@ jobs:
         with:
           license-file: workflow/matlab/license.lic
 
+      - name: Fix license file permissions
+        run: chmod 644 workflow/matlab/license.lic
+      
       - name: Run MATLAB tests
         run: matlab -batch "results = runtests('test'); exit(~all([results.Passed]));"
 
