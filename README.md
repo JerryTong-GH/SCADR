@@ -70,5 +70,5 @@ This library was developed and maintained by Mahir Taher and Jerry Tong. Thanks 
 - Mahir Taher: mahir.taher@hotmail.co.uk (developer)
 - Jerry Tong: jerrytong0810@gmail.com (developer)
 - Corbin Glufka: corbinglufka@outlook.com (owner of default dataset)
-- Kurt Haas: kurt.haas@ubc.ca (PI)
+- Kurt Haas: kurt.haas@ubc.ca (Supervisor)
 
