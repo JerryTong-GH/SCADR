@@ -1,0 +1,22 @@
+name: MATLAB Tests
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup MATLAB
+        uses: matlab-actions/setup-matlab@v1
+
+      - name: Run tests
+        run: matlab -batch "results = runtests('test'); exit(~all([results.Passed]));"
