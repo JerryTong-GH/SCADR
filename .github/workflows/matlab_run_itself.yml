@@ -14,11 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up MATLAB
-        uses: matlab-actions/setup-matlab@v2  # no additional inputs for license
+        uses: matlab-actions/setup-matlab@v2
 
       - name: Run MATLAB tests
-        uses: matlab-actions/run-tests@v2
-        with:
-          use-parallel: true
+        run: matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
+
 
 
