@@ -1,7 +1,7 @@
 site_name: SCADR Documentation
 nav:
   - Home: index.md
-  - Installation: install.md
+  - Installation: installation.md
 
 theme:
   name: material
