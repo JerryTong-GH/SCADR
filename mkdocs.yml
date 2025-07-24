@@ -2,7 +2,6 @@ site_name: SCADR Documentation
 nav:
   - Home: index.md
   - Installation: install.md
-  - CLI: cli.md
 
 theme:
   name: material
