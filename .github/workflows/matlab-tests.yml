@@ -19,6 +19,7 @@ jobs:
           access-token: ${{ secrets.MW_PAT }}
       
       - name: Run MATLAB tests
-        run: matlab -batch "results = runtests('test'); exit(~all([results.Passed]));"
+        run: matlab -batch "addpath(genpath('development')); results = runtests('test'); exit(~all([results.Passed]));"
+
 
 
