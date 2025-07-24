@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Welcome to CellProfilerPlus
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+🚀 *CellProfilerPlus* is a streamlined, Python-based toolkit for analyzing high-throughput cell imaging data.
 
-## Commands
+- 🔬 Compatible with FlowJo/CellProfiler outputs
+- 📊 Built-in PCA, UMAP, and clustering support
+- 🧪 Interactive visualizations
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+[GitHub Repository](https://github.com/yourusername/CellProfilerPlus)
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
