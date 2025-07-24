@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up MATLAB
-        uses: matlab-actions/setup-matlab@v2
+        uses: matlab-actions/setup-matlab@v2.1.0
         with:
           access-token: ${{ secrets.MW_PAT }}
 
