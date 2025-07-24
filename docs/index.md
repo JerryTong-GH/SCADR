@@ -1,10 +1,10 @@
-# Welcome to CellProfilerPlus
+# Welcome to SCADR Docs
 
-🚀 *CellProfilerPlus* is a streamlined, Python-based toolkit for analyzing high-throughput cell imaging data.
+SCADR is a tool for [describe here briefly].
 
-- 🔬 Compatible with FlowJo/CellProfiler outputs
-- 📊 Built-in PCA, UMAP, and clustering support
-- 🧪 Interactive visualizations
+## Get Started
 
-[GitHub Repository](https://github.com/yourusername/CellProfilerPlus)
+- [Installation](install.md)
+- [Command Line Usage](cli.md)
+
 
