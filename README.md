@@ -1,5 +1,7 @@
 # SCADR (Single Cell Analytics for Dose Response) 
 
+[![MATLAB Tests](https://github.com/JerryTong-GH/SCADR/actions/workflows/matlab-tests.yml/badge.svg)](https://github.com/JerryTong-GH/SCADR/actions/workflows/matlab-tests.yml)
+
 Currently editing in progress
 
 ## Overview
