@@ -8,8 +8,6 @@ on:
 jobs:
   test:
     runs-on: self-hosted
-    env:
-      MLM_LICENSE_TOKEN: ${{ secrets.MW_PAT }}  # Pass MATLAb batch license token here
 
     steps:
       - name: Checkout repository
