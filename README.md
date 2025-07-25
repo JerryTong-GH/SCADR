@@ -1,6 +1,8 @@
 # SCADR (Single Cell Analytics for Dose Response) 
 
 [![MATLAB Tests](https://github.com/JerryTong-GH/SCADR/actions/workflows/matlab-tests.yml/badge.svg)](https://github.com/JerryTong-GH/SCADR/actions/workflows/matlab-tests.yml)
+[![Documentation](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://JerryTong-GH.github.io/SCADR/)
+
 
 ## Overview
 The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profiles from flow cytometry data. It is focuses on capturing the phosphoprotein profile of each cell so as to examine the impact of gene expression on signaling pathways at a single cell level. 
