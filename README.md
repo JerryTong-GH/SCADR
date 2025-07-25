@@ -5,7 +5,7 @@
 
 
 ## Overview
-The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profiles from flow cytometry data. It is focuses on capturing the phosphoprotein profile of each cell so as to examine the impact of gene expression on signaling pathways at a single cell level. 
+The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profiles from flow cytometry data. It is focuses on capturing the phosphoprotein profile of each cell so as to examine the impact of gene expression on signaling pathways at a single cell level. The documentation provides a detailed guide to using the software.
 
 ## Features
 - **Single Cell Resolution**: SCADR analyzes individual cell data rather than population medians, capturing subtle functional differences between variants.
@@ -17,7 +17,7 @@ The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profil
 
 ## Installation 
 
-SCADR requires MATLAB version 2022b or later. While the software may run on older versions, we cannot guarantee full functionality or integrity in those environments.
+While earlier versions of MATLAB may still run the software, we cannot guarantee full functionality or stability in those environments. For detailed installation instructions, please refer to the documentation.
 
 Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
 
