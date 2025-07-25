@@ -220,8 +220,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -254,8 +252,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -264,18 +260,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-via-pip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install via pip
+      Installation
     </span>
   </a>
   
@@ -306,8 +293,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -316,18 +301,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-via-pip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install via pip
+      Installation
     </span>
   </a>
   
@@ -349,16 +325,33 @@
 
 
 
-<h1 id="installation">Installation</h1>
-<h2 id="prerequisites">Prerequisites</h2>
+  <h1>Installation</h1>
+
+<h2 id="installation">Installation</h2>
+<p>While earlier versions of MATLAB may still run the software, we cannot guarantee full functionality or stability in those environments. For detailed installation instructions, please refer to the documentation.</p>
+<p>Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:</p>
 <ul>
-<li>Python 3.8 or newer</li>
-<li>pip</li>
-<li>virtualenv (optional but recommended)</li>
+<li>
+<p><em>Image Processing Toolbox</em> (v22.2 or newer)</p>
+</li>
+<li>
+<p><em>Mapping Toolbox</em> (v22.2 or newer)</p>
+</li>
+<li>
+<p><em>Statistics and Machine Learning Toolbox</em> (v22.2 or newer)</p>
+</li>
 </ul>
-<h2 id="install-via-pip">Install via pip</h2>
-<p>```bash
-pip install cellprofilerplus</p>
+<p>There are two ways of using SCADR:
+1. Open the SCADR.mlapp file located in the Development Files folder.
+  In MATLAB, ensure all relevant folders are added to the path:
+  Use the Current Folder panel on the left side.
+  Right-click each required folder and select "Add to Path" &gt; "Selected Folders and Subfolders".</p>
+<ol>
+<li>SCADR installation file is located in the Installation Files directory on the main page. Follow the on-screen prompts to complete the installation process. To ensure a complete installation, please run the .exe installation file as an administrator.</li>
+</ol>
+<p>By default, SCADR includes the dataset used in the publication:
+“Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
+Several figures from this study are available in the Demo section for reference.</p>
 
 
 
