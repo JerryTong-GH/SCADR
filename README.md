@@ -15,30 +15,6 @@ The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profil
 - **Pairwise Correlation and Heatmaps**: SCADR quantifies co-regulation and signaling cross-talk between phosphoproteins, useful for identifying mechanistic insights and variant clustering.
 - **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
 
-## Installation 
-
-While earlier versions of MATLAB may still run the software, we cannot guarantee full functionality or stability in those environments. For detailed installation instructions, please refer to the documentation.
-
-Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
-
-- *Image Processing Toolbox* (v22.2 or newer)
-
-- *Mapping Toolbox* (v22.2 or newer)
-
-- *Statistics and Machine Learning Toolbox* (v22.2 or newer)
-
-There are two ways of using SCADR:
-1. Open the SCADR.mlapp file located in the Development Files folder.
-  In MATLAB, ensure all relevant folders are added to the path:
-  Use the Current Folder panel on the left side.
-  Right-click each required folder and select "Add to Path" > "Selected Folders and Subfolders".
-
-2. SCADR installation file is located in the Installation Files directory on the main page. Follow the on-screen prompts to complete the installation process. To ensure a complete installation, please run the .exe installation file as an administrator.
-
-By default, SCADR includes the dataset used in the publication:
-“Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
-Several figures from this study are available in the Demo section for reference.
-
 ## Test Cases
 
 As most functions are closely integrated with the app’s GUI, it can be challenging to write automated tests for many of them. While some test cases (related to easier, standalone functions) have been implemented, please feel free to suggest additional tests that could improve coverage.
@@ -66,7 +42,7 @@ Please note that these playlists are not actively maintained. As SCADR continues
 This project is licensed under the Mozilla Public License Version 2.0 - see the LICENSE.md file for details.
 
 ## Credits and Acknowledgements
-This library was developed and maintained by Mahir Taher and Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
+This library was developed by Mahir Taher, Patrick Coleman and maintained by Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
 
 # Contact details:
 - Mahir Taher: mahir.taher@hotmail.co.uk (developer)
