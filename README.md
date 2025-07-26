@@ -43,7 +43,7 @@ Please note that these playlists are not actively maintained. As SCADR continues
 This project is licensed under the Mozilla Public License Version 2.0 - see the LICENSE.md file for details.
 
 ## Credits and Acknowledgements
-This library was developed by Mahir Taher, Patrick Coleman and maintained by Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
+This library was developed by Mahir Taher, Patrick Coleman and Jerry Tong. The repository is currently maintained by Jerry Tong. Thanks to all contributors in this paper (need to be filled) who have helped in providing suggestions and edits to this project.
 
 # Contact details:
 - Mahir Taher: mahir.taher@hotmail.co.uk (developer)
