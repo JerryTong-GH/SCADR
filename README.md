@@ -49,5 +49,5 @@ This library was developed by Mahir Taher, Patrick Coleman and Jerry Tong. The r
 - Mahir Taher: mahir.taher@hotmail.co.uk (developer)
 - Jerry Tong: jerrytong0810@gmail.com (developer, owner of repo)
 - Corbin Glufka: corbinglufka@outlook.com (owner of default dataset)
-- Kurt Haas: kurt.haas@ubc.ca (Supervisor)
+- Kurt Haas: kurt.haas@ubc.ca (supervisor)
 
