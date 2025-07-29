@@ -43,10 +43,6 @@ Steps:
    
 Note: For a successful installation, it is recommended to run the installer as an **administrator**.
 
-## Licensing and Contribution
-SCADR is protected by copyright. Please review and respect the licensing terms outlined in the repository. Contributions are welcome and will be credited appropriately.
-For collaboration or moderator access, please contact: jerrytong0810@gmail.com
-
 ## Datasets Included in the Library
 By default, SCADR includes the dataset used in the publication:
 “Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
