@@ -4,6 +4,7 @@ nav:
   - Installation: installation.md
   - Modules: modules.md
   - Examples: example.md
+  - Licensing and Contribution: contribution.md
 
 theme:
   name: material
