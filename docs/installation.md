@@ -1,5 +1,3 @@
-## Installation 
-
 The software may still run on earlier versions of MATLAB; however, full functionality and stability cannot be guaranteed if older versions of add-ons/matlab are used. 
 
 All installation tests have been conducted using MATLAB version 2022b or later. Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
