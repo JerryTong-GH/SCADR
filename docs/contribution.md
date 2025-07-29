@@ -3,3 +3,6 @@ SCADR is protected by copyright. Please review and respect the licensing terms o
 
 
 For collaborations, suggestions or moderator access, please contact: jerrytong0810@gmail.com
+
+
+*© Copyright 2025, Jerry Tong, Corbin Glufka*
