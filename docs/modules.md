@@ -10,3 +10,4 @@
 - [tSNE, UMAP, PCA, Biexponentials](analysisplot.md)
   
 
+*© Copyright 2025, Jerry Tong, Corbin Glufka*
