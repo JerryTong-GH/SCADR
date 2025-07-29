@@ -16,10 +16,15 @@ There are two ways of using/installing SCADR:
 This installation mode is intended for users who wish to modify or extend SCADR’s functionality or user interface. It gives full access to the underlying code, making it ideal for developers looking to adapt SCADR to their specific research or analysis needs.
 
 Steps to Set Up SCADR in Development Mode:
+
 1. Open MATLAB and navigate to the **Development** folder located within the SCADR GitHub repository.
+   
 2. Select all folders inside the **Development** directory.
+   
 3. Right-click on the selected folders and choose:
+   
 4. Add to Path → Selected Folders and Subfolders.
+   
 5. Locate and double-click the file **SCADR.mlapp**.
 
 Note: If MATLAB does not open the file using App Designer, install the App Designer add-on from the Add-Ons tab.
