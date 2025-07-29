@@ -48,3 +48,6 @@ By default, SCADR includes the dataset used in the publication:
 “Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
 
 Several figures from this study are available in the Demo section as reference examples.
+
+
+*© Copyright 2025, Jerry Tong, Corbin Glufka*
