@@ -268,6 +268,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-scadr-as-a-developer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SCADR as a Developer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-scadr-as-a-general-user-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SCADR as a General User (Recommended)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing-and-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing and Contribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets-included-in-the-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datasets Included in the Library
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -309,6 +345,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-scadr-as-a-developer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SCADR as a Developer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-scadr-as-a-general-user-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using SCADR as a General User (Recommended)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licensing-and-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Licensing and Contribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets-included-in-the-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datasets Included in the Library
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -328,8 +400,8 @@
   <h1>Installation</h1>
 
 <h2 id="installation">Installation</h2>
-<p>While earlier versions of MATLAB may still run the software, we cannot guarantee full functionality or stability in those environments. For detailed installation instructions, please refer to the documentation.</p>
-<p>Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:</p>
+<p>The software may still run on earlier versions of MATLAB; however, full functionality and stability cannot be guaranteed if older versions of add-ons/matlab are used. </p>
+<p>All installation tests have been conducted using MATLAB version 2022b or later. Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:</p>
 <ul>
 <li>
 <p><em>Image Processing Toolbox</em> (v22.2 or newer)</p>
@@ -341,17 +413,32 @@
 <p><em>Statistics and Machine Learning Toolbox</em> (v22.2 or newer)</p>
 </li>
 </ul>
-<p>There are two ways of using SCADR:
-1. Open the SCADR.mlapp file located in the Development Files folder.
-  In MATLAB, ensure all relevant folders are added to the path:
-  Use the Current Folder panel on the left side.
-  Right-click each required folder and select "Add to Path" &gt; "Selected Folders and Subfolders".</p>
-<ol>
-<li>SCADR installation file is located in the Installation Files directory on the main page. Follow the on-screen prompts to complete the installation process. To ensure a complete installation, please run the .exe installation file as an administrator.</li>
-</ol>
+<p>There are two ways of using/installing SCADR:</p>
+<h2 id="using-scadr-as-a-developer">Using SCADR as a Developer</h2>
+<p>This installation mode is intended for users who wish to modify or extend SCADR’s functionality or user interface. It gives full access to the underlying code, making it ideal for developers looking to adapt SCADR to their specific research or analysis needs.</p>
+<p>Steps to Set Up SCADR in Development Mode:
+1. Open MATLAB and navigate to the <strong>Development</strong> folder located within the SCADR GitHub repository.
+2. Select all folders inside the <strong>Development</strong> directory.
+3. Right-click on the selected folders and choose:
+4. Add to Path → Selected Folders and Subfolders.
+5. Locate and double-click the file <strong>SCADR.mlapp</strong>.</p>
+<p>Note: If MATLAB does not open the file using App Designer, install the App Designer add-on from the Add-Ons tab.</p>
+<p>To modify the code, click <strong>Code View</strong> (top-right of the App Designer window).
+To launch the software in UI mode, click the <strong>Run</strong> button located beneath the <strong>Canvas</strong> tab.</p>
+<h2 id="using-scadr-as-a-general-user-recommended">Using SCADR as a General User (Recommended)</h2>
+<p>This installation method allows you to use SCADR without directly modifying its source code. It is ideal for users who want a stable, ready-to-use version of the software without the risk of unintentionally breaking any functionality. While code editing is not supported in this mode, the installation is more secure and can be easily reinstalled if needed.
+Steps:
+1. Navigate to the Installation Files directory on the main page of the SCADR repository.
+2. Double-click on the <strong>SCADR_Installer</strong>.
+3. Follow the on-screen prompts to complete the installation process.
+Note: For a successful installation, it is recommended to run the installer as an <strong>administrator</strong>.</p>
+<h2 id="licensing-and-contribution">Licensing and Contribution</h2>
+<p>SCADR is protected by copyright. Please review and respect the licensing terms outlined in the repository. Contributions are welcome and will be credited appropriately.
+For collaboration or moderator access, please contact: jerrytong0810@gmail.com</p>
+<h2 id="datasets-included-in-the-library">Datasets Included in the Library</h2>
 <p>By default, SCADR includes the dataset used in the publication:
-“Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
-Several figures from this study are available in the Demo section for reference.</p>
+“Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”</p>
+<p>Several figures from this study are available in the Demo section as reference examples.</p>
 
 
 
