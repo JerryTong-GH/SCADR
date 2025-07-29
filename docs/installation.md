@@ -12,7 +12,7 @@ All installation tests have been conducted using MATLAB version 2022b or later. 
 
 There are two ways of using/installing SCADR:
 
-# Using SCADR as a Developer
+## Using SCADR as a Developer
 
 This version of installation allows you to interact with the SCADR code more, meaning that the user can modify and change
 Open the SCADR.mlapp file located in the Development Files folder.
@@ -20,7 +20,7 @@ Open the SCADR.mlapp file located in the Development Files folder.
   Use the Current Folder panel on the left side.
   Right-click each required folder and select "Add to Path" > "Selected Folders and Subfolders".
 
-# Using SCADR as a General User
+## Using SCADR as a General User
 2. SCADR installation file is located in the Installation Files directory on the main page. Follow the on-screen prompts to complete the installation process. To ensure a complete installation, please run the .exe installation file as an administrator.
 
 By default, SCADR includes the dataset used in the publication:
