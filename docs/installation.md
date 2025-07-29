@@ -13,16 +13,34 @@ All installation tests have been conducted using MATLAB version 2022b or later. 
 There are two ways of using/installing SCADR:
 
 ## Using SCADR as a Developer
+This installation mode is intended for users who wish to modify or extend SCADR’s functionality or user interface. It gives full access to the underlying code, making it ideal for developers looking to adapt SCADR to their specific research or analysis needs.
 
-This version of installation allows you to interact with the SCADR code more, meaning that the user can modify and change
-Open the SCADR.mlapp file located in the Development Files folder.
-  In MATLAB, ensure all relevant folders are added to the path:
-  Use the Current Folder panel on the left side.
-  Right-click each required folder and select "Add to Path" > "Selected Folders and Subfolders".
+Steps to Set Up SCADR in Development Mode:
+1. Open MATLAB and navigate to the **Development** folder located within the SCADR GitHub repository.
+2. Select all folders inside the **Development** directory.
+3. Right-click on the selected folders and choose:
+4. Add to Path → Selected Folders and Subfolders.
+5. Locate and double-click the file **SCADR.mlapp**.
 
-## Using SCADR as a General User
-2. SCADR installation file is located in the Installation Files directory on the main page. Follow the on-screen prompts to complete the installation process. To ensure a complete installation, please run the .exe installation file as an administrator.
+Note: If MATLAB does not open the file using App Designer, install the App Designer add-on from the Add-Ons tab.
 
+To modify the code, click **Code View** (top-right of the App Designer window).
+To launch the software in UI mode, click the **Run** button located beneath the **Canvas** tab.
+
+## Using SCADR as a General User (Recommended)
+This installation method allows you to use SCADR without directly modifying its source code. It is ideal for users who want a stable, ready-to-use version of the software without the risk of unintentionally breaking any functionality. While code editing is not supported in this mode, the installation is more secure and can be easily reinstalled if needed.
+Steps:
+1. Navigate to the Installation Files directory on the main page of the SCADR repository.
+2. Double-click on the **SCADR_Installer**.
+3. Follow the on-screen prompts to complete the installation process.
+Note: For a successful installation, it is recommended to run the installer as an **administrator**.
+
+## Licensing and Contribution
+SCADR is protected by copyright. Please review and respect the licensing terms outlined in the repository. Contributions are welcome and will be credited appropriately.
+For collaboration or moderator access, please contact: jerrytong0810@gmail.com
+
+## Datasets Included in the Library
 By default, SCADR includes the dataset used in the publication:
 “Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
-Several figures from this study are available in the Demo section for reference.
+
+Several figures from this study are available in the Demo section as reference examples.
