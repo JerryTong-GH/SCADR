@@ -8,7 +8,7 @@
 ## Example Output
 - [Examples](examples.md)
 
-# Overview
+## Overview
 
 SCADR is a MATLAB-based tool designed to analyze single-cell phosphoprotein data derived from standard flow cytometry experiments, typically formatted as CSV files. Since transfection often results in variable expression levels across individual cells, SCADR takes advantage of this heterogeneity by tracking how changes in protein abundance (e.g., from a transfected gene) affect the levels of downstream phosphoproteins. By linking the expression of specific genes to signaling outputs, SCADR generates dose-response curves that reflect how the functional activity of a gene variant behaves across a range of expression levels. This enables a more nuanced and dynamic understanding of how protein variants impact intracellular signaling pathways in real time, at the single-cell level.
 
