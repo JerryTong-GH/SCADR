@@ -1,10 +1,21 @@
-site_name: SCADR Documentation
-nav:
-  - Home: index.md
-  - Installation: installation.md
-  - Modules: modules.md
-  - Examples: example.md
+name: Create Release
 
-theme:
-  name: material
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger only on tags like v1.0.0
 
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
