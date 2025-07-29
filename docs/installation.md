@@ -33,9 +33,13 @@ To launch the software in UI mode, click the **Run** button located beneath the 
 ## Using SCADR as a General User (Recommended)
 This installation method allows you to use SCADR without directly modifying its source code. It is ideal for users who want a stable, ready-to-use version of the software without the risk of unintentionally breaking any functionality. While code editing is not supported in this mode, the installation is more secure and can be easily reinstalled if needed.
 Steps:
+
 1. Navigate to the Installation Files directory on the main page of the SCADR repository.
+   
 2. Double-click on the **SCADR_Installer**.
+   
 3. Follow the on-screen prompts to complete the installation process.
+   
 Note: For a successful installation, it is recommended to run the installer as an **administrator**.
 
 ## Licensing and Contribution
