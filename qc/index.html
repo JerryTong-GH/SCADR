@@ -9,8 +9,6 @@
       
       
       
-        <link rel="prev" href="../example/">
-      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +16,7 @@
     
     
       
-        <title>Licensing and Contribution - SCADR Documentation</title>
+        <title>Welcome to SCADR Docs - SCADR Documentation</title>
       
     
     
@@ -60,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#licensing-and-contribution" class="md-skip">
+        <a href="#welcome-to-scadr-docs" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Licensing and Contribution
+              Welcome to SCADR Docs
             
           </span>
         </div>
@@ -277,30 +275,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Licensing and Contribution
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../contribution/" class="md-nav__link">
         
   
   
@@ -311,33 +289,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#licensing-and-contribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Licensing and Contribution
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -359,6 +310,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -367,9 +320,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#licensing-and-contribution" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Licensing and Contribution
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Get Started
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Output
     </span>
   </a>
   
@@ -391,11 +362,20 @@
 
 
 
-  <h1>Licensing and Contribution</h1>
-
-<h2 id="licensing-and-contribution">Licensing and Contribution</h2>
-<p>SCADR is protected by copyright. Please review and respect the licensing terms outlined in the repository. Contributions are welcome and will be credited appropriately.
-For collaborations, suggestions or moderator access, please contact: jerrytong0810@gmail.com</p>
+<h1 id="welcome-to-scadr-docs">Welcome to SCADR Docs</h1>
+<h2 id="overview">Overview</h2>
+<p>SCADR is a MATLAB-based tool designed to analyze single-cell phosphoprotein data derived from standard flow cytometry experiments, typically formatted as CSV files. Since transfection often results in variable expression levels across individual cells, SCADR takes advantage of this heterogeneity by tracking how changes in protein abundance (e.g., from a transfected gene) affect the levels of downstream phosphoproteins. By linking the expression of specific genes to signaling outputs, SCADR generates dose-response curves that reflect how the functional activity of a gene variant behaves across a range of expression levels. This enables a more nuanced and dynamic understanding of how protein variants impact intracellular signaling pathways in real time, at the single-cell level.</p>
+<p>SCADR includes standard regression models such as rLOESS to reveal subtle functional differences among gene variants. It also provides traditional analytical metrics like median fluorescence intensity (MFI), as well as single-cell–based correlation analysis to uncover relationships between phosphoproteins. The tool offers built-in filtering options and supports multiple dimensionality reduction techniques—including PCA, t-SNE, and UMAP—along with biexponential transformations for visual clarity. These features allow users to identify signaling cross-talk, uncover variant-specific profiles, and explore complex cellular phenotypes through correlation heatmaps and clustering.</p>
+<h2 id="get-started">Get Started</h2>
+<ul>
+<li><a href="../installation/">Installation</a></li>
+<li><a href="../modules/">Modules</a></li>
+</ul>
+<h2 id="example-output">Example Output</h2>
+<ul>
+<li><a href="examples.md">Examples</a></li>
+</ul>
+<p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
 
 
 
