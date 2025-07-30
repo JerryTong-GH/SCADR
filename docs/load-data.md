@@ -11,4 +11,5 @@ Once the data is loaded, you can explore it using the user interface panels on t
 
 ![Data Viewer Example](../Pictures/data_viewer.png)
 
+
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
