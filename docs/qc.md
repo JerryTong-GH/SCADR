@@ -1,4 +1,4 @@
-## Filtering Methods in SCADR
+## Filtering Methods in SCADR (Quality Control)
 SCADR offers multiple filtering options to clean and preprocess data before downstream analysis. These are accessible through two dedicated tabs: one for channel-based filtering and another for scatter plot filtering.
 
 ## Channel Filtering 
