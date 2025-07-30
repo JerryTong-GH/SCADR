@@ -5,7 +5,7 @@ SCADR offers multiple filtering options to clean and preprocess data before down
 The Channel Filtering section provides two primary methods for excluding unwanted data points:
 
 1. Threshold Filtering
-   
+
 Users can define minimum and/or maximum intensity thresholds for specific markers. This helps eliminate outliers, non-responsive cells, and background or low-signal noise.
 
 2. Quantile-Based Filtering
