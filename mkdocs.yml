@@ -4,7 +4,6 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Modules: modules.md
-  - Examples: example.md
   - Licensing and Contribution: contribution.md
   - Loading Data: load-data.md
   - Quality Control: qc.md
@@ -14,6 +13,7 @@ nav:
   - Correlation Tests: correlationtests.md
   - Expression vs Marker Correlation: expressioncorrelation.md
   - tSNE, UMAP, PCA, Biexponentials: analysisplot.md
+  - Examples: example.md
 
 theme:
   name: material
