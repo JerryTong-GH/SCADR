@@ -1,18 +1,29 @@
-# Welcome to SCADR Docs
+## Filtering Methods in SCADR
+SCADR offers multiple filtering options to clean and preprocess data before downstream analysis. These are accessible through two dedicated tabs: one for channel-based filtering and another for scatter plot filtering.
 
-## Overview
+## Channel Filtering (Under the “QC” Tab)
+The Channel Filtering section provides two primary methods for excluding unwanted data points:
 
-SCADR is a MATLAB-based tool designed to analyze single-cell phosphoprotein data derived from standard flow cytometry experiments, typically formatted as CSV files. Since transfection often results in variable expression levels across individual cells, SCADR takes advantage of this heterogeneity by tracking how changes in protein abundance (e.g., from a transfected gene) affect the levels of downstream phosphoproteins. By linking the expression of specific genes to signaling outputs, SCADR generates dose-response curves that reflect how the functional activity of a gene variant behaves across a range of expression levels. This enables a more nuanced and dynamic understanding of how protein variants impact intracellular signaling pathways in real time, at the single-cell level.
+1. Threshold Filtering
+   
+Users can define minimum and/or maximum intensity thresholds for specific markers. This helps eliminate outliers, non-responsive cells, and background or low-signal noise.
 
-SCADR includes standard regression models such as rLOESS to reveal subtle functional differences among gene variants. It also provides traditional analytical metrics like median fluorescence intensity (MFI), as well as single-cell–based correlation analysis to uncover relationships between phosphoproteins. The tool offers built-in filtering options and supports multiple dimensionality reduction techniques—including PCA, t-SNE, and UMAP—along with biexponential transformations for visual clarity. These features allow users to identify signaling cross-talk, uncover variant-specific profiles, and explore complex cellular phenotypes through correlation heatmaps and clustering.
+2. Quantile-Based Filtering
+   
+This method removes cells falling outside a specified percentile range (e.g., below the 2nd or above the 98th percentile). It provides a flexible way to exclude extreme values without needing precise numeric cutoffs.
 
-## Get Started
+Below is an example of filtered data output using the methods above. The resulting figure can be saved by clicking the (invisible) button in the upper-right corner of the plot.
 
-- [Installation](installation.md)
-- [Modules](modules.md)
+![Channel Filtering](Pictures/channel_filtering.png)
 
-## Example Output
-- [Examples](examples.md)
+## Scatter Plot Filtering
 
+The Scatter Plot Filtering tab allows users to interactively define filtering regions by manually drawing gates on 2D scatter plots. nUsers can draw polygonal gates directly on scatter plots (e.g., GFP vs. SSC-A) to isolate specific cell populations. The custom Axes Selection allows the user to select any pair of markers for the x- and y-axes, giving full flexibility in defining populations of interest based on transfection markers, signaling proteins, or scatter channels. SCADR also supports the creation of multiple gates to either include or exclude specific populations in one or more scatter plots.
+
+Below is an example of scatter plot output. 
+
+![Scatter Filtering](Pictures/scatter_filtering.png)
+
+Filtered data from both the channel and scatter plot filtering steps are automatically used in downstream analyses, including dose-response modeling and dimensionality reduction.
 
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
