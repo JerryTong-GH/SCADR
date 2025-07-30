@@ -4,13 +4,9 @@ SCADR offers multiple filtering options to clean and preprocess data before down
 ## Channel Filtering (Under the “QC” Tab)
 The Channel Filtering section provides two primary methods for excluding unwanted data points:
 
-1. Threshold Filtering
+**Threshold Filtering**: Users can define minimum and/or maximum intensity thresholds for specific markers. This helps eliminate outliers, non-responsive cells, and background or low-signal noise.
 
-Users can define minimum and/or maximum intensity thresholds for specific markers. This helps eliminate outliers, non-responsive cells, and background or low-signal noise.
-
-2. Quantile-Based Filtering
-   
-This method removes cells falling outside a specified percentile range (e.g., below the 2nd or above the 98th percentile). It provides a flexible way to exclude extreme values without needing precise numeric cutoffs.
+**Quantile-Based Filtering**: This method removes cells falling outside a specified percentile range (e.g., below the 2nd or above the 98th percentile). It provides a flexible way to exclude extreme values without needing precise numeric cutoffs.
 
 Below is an example of filtered data output using the methods above. The resulting figure can be saved by clicking the (invisible) button in the upper-right corner of the plot.
 
