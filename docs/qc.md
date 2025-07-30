@@ -1,7 +1,7 @@
 ## Filtering Methods in SCADR
 SCADR offers multiple filtering options to clean and preprocess data before downstream analysis. These are accessible through two dedicated tabs: one for channel-based filtering and another for scatter plot filtering.
 
-## Channel Filtering (Under the “QC” Tab)
+## Channel Filtering 
 The Channel Filtering section provides two primary methods for excluding unwanted data points:
 
 **Threshold Filtering**: Users can define minimum and/or maximum intensity thresholds for specific markers. This helps eliminate outliers, non-responsive cells, and background or low-signal noise.
