@@ -11,5 +11,10 @@ Once the data is loaded, you can explore it using the user interface panels on t
 
 ![Data Viewer Example](Pictures/data_viewer.png)
 
+## Loading Marker Channels
+
+After loading the data, navigate to the Define Channels tab (shown below), and click on Add all available markers to import the channel information into the software.
+
+![Add Channel](Pictures/add_channels.png)
 
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
