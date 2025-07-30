@@ -1,18 +1,14 @@
-# Welcome to SCADR Docs
+Once the software has finished setting up, the initial view will appear as shown below:
 
-## Overview
+![Loading Data Page](Pictures/load_data.png)
 
-SCADR is a MATLAB-based tool designed to analyze single-cell phosphoprotein data derived from standard flow cytometry experiments, typically formatted as CSV files. Since transfection often results in variable expression levels across individual cells, SCADR takes advantage of this heterogeneity by tracking how changes in protein abundance (e.g., from a transfected gene) affect the levels of downstream phosphoproteins. By linking the expression of specific genes to signaling outputs, SCADR generates dose-response curves that reflect how the functional activity of a gene variant behaves across a range of expression levels. This enables a more nuanced and dynamic understanding of how protein variants impact intracellular signaling pathways in real time, at the single-cell level.
+## Loading and Visualizing Data
+To load data into the software, click on the **Load in a dataset / library of datasets** button, highlighted in the image above. You will first be prompted to select the location of your dataset. It is strongly recommended that the input data be stored in the input folder provided by the GitHub repository or included during installation.
 
-SCADR includes standard regression models such as rLOESS to reveal subtle functional differences among gene variants. It also provides traditional analytical metrics like median fluorescence intensity (MFI), as well as single-cell–based correlation analysis to uncover relationships between phosphoproteins. The tool offers built-in filtering options and supports multiple dimensionality reduction techniques—including PCA, t-SNE, and UMAP—along with biexponential transformations for visual clarity. These features allow users to identify signaling cross-talk, uncover variant-specific profiles, and explore complex cellular phenotypes through correlation heatmaps and clustering.
+Next, the software will prompt you to select a data template. An example template can be found in the “Well info file template” at the top of this GitHub repository. You may select that file during this step. If you choose to skip this step, the software will attempt to automatically detect the structure of the input files.
 
-## Get Started
+Once the data is loaded, you can explore it using the user interface panels on the right side of the screen.
 
-- [Installation](installation.md)
-- [Modules](modules.md)
-
-## Example Output
-- [Examples](examples.md)
-
+![Data Viewer Example](Pictures/data_viewer.png)
 
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
