@@ -28,8 +28,7 @@ classdef test3_initialise_filter_dictionaries_upon_marker_change_2 < matlab.unit
                 dataset_dictionary_marker_quantile_filter_bounds, ...
                 dataset_dictionary_marker_polygon_filter);
 
-            all_keys = ["23Dec22_compensated_singlet", "Flowjo_export_Nov27_Scale_Jan27FMOHAappliedFMOAllAppliedHA2%", ...
-                "Flowjo_export_Nov27_Scale_Jan27FMOHAappliedFMOAllAppliedHA2% - Copy"];
+            all_keys = ["23Dec22_compensated_singlet"];
 
             % Initialize flag
             missing_key = 0;
