@@ -22,4 +22,9 @@ Below is an example of scatter plot output.
 
 Filtered data from both the channel and scatter plot filtering steps are automatically used in downstream analyses, including dose-response modeling and dimensionality reduction.
 
+## Storing Data After Filtering
+After completing the filtering steps (see the above section for details), users can save the processed data. By default, the output is saved in the Output Data folder, but this directory can be changed as needed.
+
+To export the filtered data, simply click the **Filter and Process Data** button.
+
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
