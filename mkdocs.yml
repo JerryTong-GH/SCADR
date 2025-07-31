@@ -7,6 +7,7 @@ nav:
   - Licensing and Contribution: contribution.md
   - Loading Data: load-data.md
   - Quality Control: qc.md
+  - Storing Filtered Data: process_data.md
   - 1-3D Plot: 13D.md
   - 3D Plot on 2D: 3Don2D.md
   - Correlation Grid: correlationgrid.md
