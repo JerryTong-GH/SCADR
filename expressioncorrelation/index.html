@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#expression-vs-marker-correlation-in-scadr" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -255,28 +260,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../contribution/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Licensing and Contribution
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../load-data/" class="md-nav__link">
         
   
@@ -394,6 +377,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Expression vs Marker Correlation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -405,6 +401,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#expression-vs-marker-correlation-in-scadr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression vs. Marker Correlation in SCADR
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -432,6 +454,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Licensing and Contribution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -450,6 +494,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#expression-vs-marker-correlation-in-scadr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expression vs. Marker Correlation in SCADR
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -466,7 +527,14 @@
 
   <h1>Expression vs Marker Correlation</h1>
 
-<p>TBF</p>
+<p>This analysis investigates how the abundance of a transfected protein (i.e., expression level) correlates with the abundance of downstream phosphoproteins (markers). It's a central function of SCADR and helps reveal the functional impact of genetic variants on signaling pathways in a dose-dependent manner.</p>
+<p>For each single cell, SCADR tracks the expression level of the transfected protein (often tagged with a reporter like GFP). It then compares this to the intensity of downstream markers (e.g., phospho-Akt, phospho-ERK). By plotting the relationship across thousands of single cells, the software fits a dose-response curve to model how changes in expression drive downstream activity.</p>
+<h2 id="expression-vs-marker-correlation-in-scadr">Expression vs. Marker Correlation in SCADR</h2>
+<p>To perform this analysis in SCADR, navigate to the <strong>Expression Segmentation</strong> tab. Use the panel on the right to select the desired variant(s) and marker(s), then click <strong>Update Plot</strong> to generate the results.</p>
+<p>For each selected variant-marker pair, SCADR produces a correlation plot that visualizes how the expression level of the transfected protein relates to the intensity of the downstream marker. A best-fit curve is automatically applied to highlight the overall trend.
+An example output is shown below.</p>
+<p><img alt="Expression Correlation Example" src="../Pictures/expression_example.png" /></p>
+<p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
 
 
 
