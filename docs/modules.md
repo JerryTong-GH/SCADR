@@ -1,7 +1,7 @@
 ## Modules and Guides
 
 - [Loading Data](load-data.md)
-- [Quality Control](qc.md)
+- [Filtering Data](qc.md)
 - [1-3D Plot](13D.md)
 - [3D Plot on 2D](3Don2D.md)
 - [Correlation Grid and Tests](correlation.md)
