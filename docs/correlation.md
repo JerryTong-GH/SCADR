@@ -1,7 +1,7 @@
 ## Correlation Plots
 The Correlation Grid tab allows users to evaluate the relationship between two selected markers within specific variants. It displays both distribution histograms and a correlation scatter plot, enabling users to assess expression trends and co-variation patterns. An example is shown below.
 
-![Correlation Plot Example](Pictures/expression_plot_example.png)
+![Correlation Plot Example](Pictures/correlation_plot_example.png)
 
 ## Correlation Tests
 Correlation Tests
@@ -27,6 +27,6 @@ If a marker fails the normality tests, non-parametric correlation methods (such 
 
 An example of the output is shown below.
 
-![Correlation Test Example](Pictures/expression_Test_example.png)
+![Correlation Test Example](Pictures/correlation_test_example.png)
 
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
