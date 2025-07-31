@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../load-data/">
+      
+      
+        <link rel="next" href="../13D/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Qc - SCADR Documentation</title>
+        <title>Filtering Data - SCADR Documentation</title>
       
     
     
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Qc
+              Filtering Data
             
           </span>
         </div>
@@ -297,20 +301,94 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../process_data.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Filtering Data
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Storing Filtered Data
+    Filtering Data
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#filtering-methods-in-scadr-quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtering Methods in SCADR (Quality Control)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#channel-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Channel Filtering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scatter-plot-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scatter Plot Filtering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storing-data-after-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing Data After Filtering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -415,7 +493,7 @@
   
   
   <span class="md-ellipsis">
-    tSNE, UMAP, PCA, Biexponentials
+    tSNE, UMAP, PCA, and Biexponential Transformation
     
   </span>
   
@@ -501,7 +579,7 @@
 
 
 
-  <h1>Qc</h1>
+  <h1>Filtering Data</h1>
 
 <h2 id="filtering-methods-in-scadr-quality-control">Filtering Methods in SCADR (Quality Control)</h2>
 <p>SCADR offers multiple filtering options to clean and preprocess data before downstream analysis. These are accessible through two dedicated tabs: one for channel-based filtering and another for scatter plot filtering.</p>
