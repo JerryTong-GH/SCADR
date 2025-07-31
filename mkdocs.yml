@@ -12,7 +12,6 @@ nav:
   - Correlation Grid and Tests: correlation.md
   - Expression vs Marker Correlation: expressioncorrelation.md
   - tSNE, UMAP, PCA, Biexponentials: analysisplot.md
-  - Examples: example.md
 
 theme:
   name: material
