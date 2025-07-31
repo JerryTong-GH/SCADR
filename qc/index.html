@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../load-data/">
-      
-      
-        <link rel="next" href="../13D/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Quality Control - SCADR Documentation</title>
+        <title>Qc - SCADR Documentation</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#filtering-methods-in-scadr" class="md-skip">
+        <a href="#filtering-methods-in-scadr-quality-control" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quality Control
+              Qc
             
           </span>
         </div>
@@ -301,85 +297,20 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Quality Control
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../process_data.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Quality Control
+    Storing Filtered Data
     
   </span>
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#filtering-methods-in-scadr" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filtering Methods in SCADR
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#channel-filtering-under-the-qc-tab" class="md-nav__link">
-    <span class="md-ellipsis">
-      Channel Filtering (Under the “QC” Tab)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scatter-plot-filtering" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scatter Plot Filtering
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -435,34 +366,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../correlationgrid/" class="md-nav__link">
+      <a href="../correlation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Correlation Grid
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../correlationtests/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Correlation Tests
+    Correlation Grid and Tests
     
   </span>
   
@@ -516,28 +425,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Examples
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -563,18 +450,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#filtering-methods-in-scadr" class="md-nav__link">
+  <a href="#filtering-methods-in-scadr-quality-control" class="md-nav__link">
     <span class="md-ellipsis">
-      Filtering Methods in SCADR
+      Filtering Methods in SCADR (Quality Control)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#channel-filtering-under-the-qc-tab" class="md-nav__link">
+  <a href="#channel-filtering" class="md-nav__link">
     <span class="md-ellipsis">
-      Channel Filtering (Under the “QC” Tab)
+      Channel Filtering
     </span>
   </a>
   
@@ -584,6 +471,15 @@
   <a href="#scatter-plot-filtering" class="md-nav__link">
     <span class="md-ellipsis">
       Scatter Plot Filtering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storing-data-after-filtering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing Data After Filtering
     </span>
   </a>
   
@@ -605,11 +501,11 @@
 
 
 
-  <h1>Quality Control</h1>
+  <h1>Qc</h1>
 
-<h2 id="filtering-methods-in-scadr">Filtering Methods in SCADR</h2>
+<h2 id="filtering-methods-in-scadr-quality-control">Filtering Methods in SCADR (Quality Control)</h2>
 <p>SCADR offers multiple filtering options to clean and preprocess data before downstream analysis. These are accessible through two dedicated tabs: one for channel-based filtering and another for scatter plot filtering.</p>
-<h2 id="channel-filtering-under-the-qc-tab">Channel Filtering (Under the “QC” Tab)</h2>
+<h2 id="channel-filtering">Channel Filtering</h2>
 <p>The Channel Filtering section provides two primary methods for excluding unwanted data points:</p>
 <p><strong>Threshold Filtering</strong>: Users can define minimum and/or maximum intensity thresholds for specific markers. This helps eliminate outliers, non-responsive cells, and background or low-signal noise.</p>
 <p><strong>Quantile-Based Filtering</strong>: This method removes cells falling outside a specified percentile range (e.g., below the 2nd or above the 98th percentile). It provides a flexible way to exclude extreme values without needing precise numeric cutoffs.</p>
@@ -620,6 +516,9 @@
 <p>Below is an example of scatter plot output. </p>
 <p><img alt="Scatter Filtering" src="../Pictures/scatter_filtering.png" /></p>
 <p>Filtered data from both the channel and scatter plot filtering steps are automatically used in downstream analyses, including dose-response modeling and dimensionality reduction.</p>
+<h2 id="storing-data-after-filtering">Storing Data After Filtering</h2>
+<p>After completing the filtering steps (see the above section for details), users can save the processed data. By default, the output is saved in the Output Data folder, but this directory can be changed as needed.</p>
+<p>To export the filtered data, simply click the <strong>Filter and Process Data</strong> button.</p>
 <p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
 
 

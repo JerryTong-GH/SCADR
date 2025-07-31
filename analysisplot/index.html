@@ -12,8 +12,6 @@
         <link rel="prev" href="../expressioncorrelation/">
       
       
-        <link rel="next" href="../example/">
-      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
@@ -62,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-scadr-docs" class="md-skip">
+        <a href="#general-user-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -304,12 +302,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../qc/" class="md-nav__link">
+      <a href="../process_data.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Quality Control
+    Storing Filtered Data
     
   </span>
   
@@ -370,34 +368,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../correlationgrid/" class="md-nav__link">
+      <a href="../correlation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Correlation Grid
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../correlationtests/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Correlation Tests
+    Correlation Grid and Tests
     
   </span>
   
@@ -442,8 +418,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -476,8 +450,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -486,27 +458,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#general-user-guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      General User Guide
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-started" class="md-nav__link">
+  <a href="#pca-principal-component-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Started
+      PCA (Principal Component Analysis)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-output" class="md-nav__link">
+  <a href="#t-sne-t-distributed-stochastic-neighbor-embedding" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Output
+      t-SNE (t-distributed Stochastic Neighbor Embedding)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#umap-uniform-manifold-approximation-and-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      UMAP (Uniform Manifold Approximation and Projection)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#biexponential-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biexponential Transformation
     </span>
   </a>
   
@@ -516,28 +506,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Examples
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -559,8 +527,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -569,27 +535,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#general-user-guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      General User Guide
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-started" class="md-nav__link">
+  <a href="#pca-principal-component-analysis" class="md-nav__link">
     <span class="md-ellipsis">
-      Get Started
+      PCA (Principal Component Analysis)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-output" class="md-nav__link">
+  <a href="#t-sne-t-distributed-stochastic-neighbor-embedding" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Output
+      t-SNE (t-distributed Stochastic Neighbor Embedding)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#umap-uniform-manifold-approximation-and-projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      UMAP (Uniform Manifold Approximation and Projection)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#biexponential-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biexponential Transformation
     </span>
   </a>
   
@@ -611,19 +595,57 @@
 
 
 
-<h1 id="welcome-to-scadr-docs">Welcome to SCADR Docs</h1>
-<h2 id="overview">Overview</h2>
-<p>SCADR is a MATLAB-based tool designed to analyze single-cell phosphoprotein data derived from standard flow cytometry experiments, typically formatted as CSV files. Since transfection often results in variable expression levels across individual cells, SCADR takes advantage of this heterogeneity by tracking how changes in protein abundance (e.g., from a transfected gene) affect the levels of downstream phosphoproteins. By linking the expression of specific genes to signaling outputs, SCADR generates dose-response curves that reflect how the functional activity of a gene variant behaves across a range of expression levels. This enables a more nuanced and dynamic understanding of how protein variants impact intracellular signaling pathways in real time, at the single-cell level.</p>
-<p>SCADR includes standard regression models such as rLOESS to reveal subtle functional differences among gene variants. It also provides traditional analytical metrics like median fluorescence intensity (MFI), as well as single-cell–based correlation analysis to uncover relationships between phosphoproteins. The tool offers built-in filtering options and supports multiple dimensionality reduction techniques—including PCA, t-SNE, and UMAP—along with biexponential transformations for visual clarity. These features allow users to identify signaling cross-talk, uncover variant-specific profiles, and explore complex cellular phenotypes through correlation heatmaps and clustering.</p>
-<h2 id="get-started">Get Started</h2>
-<ul>
-<li><a href="../installation/">Installation</a></li>
-<li><a href="../modules/">Modules</a></li>
-</ul>
-<h2 id="example-output">Example Output</h2>
-<ul>
-<li><a href="examples.md">Examples</a></li>
-</ul>
+  <h1>tSNE, UMAP, PCA, Biexponentials</h1>
+
+<p>SCADR offers four primary analytical tools to help users explore complex signaling relationships within single-cell phosphoprotein data. Each method is housed under its own dedicated tab within the software. These tools enable users to uncover data structure, identify variant-specific signatures, and better understand downstream signaling behaviors.</p>
+<p>The main analysis techniques included in SCADR are:</p>
+<ol>
+<li>
+<p>Principal Component Analysis (PCA)</p>
+</li>
+<li>
+<p>t-distributed Stochastic Neighbor Embedding (t-SNE)</p>
+</li>
+<li>
+<p>Uniform Manifold Approximation and Projection (UMAP)</p>
+</li>
+<li>
+<p>Biexponential Transformation</p>
+</li>
+</ol>
+<h2 id="general-user-guide">General User Guide</h2>
+<p>This section uses UMAP as an example, but the same procedure applies to PCA, t-SNE, and Biexponential Transformation.</p>
+<ol>
+<li>
+<p>Load your data and define markers.</p>
+</li>
+<li>
+<p>Make sure the data is preprocessed and the channels are defined in the Define Channels tab.</p>
+</li>
+<li>
+<p>Navigate to the analysis tab of your choice (e.g., UMAP, PCA, etc.).</p>
+</li>
+<li>
+<p>Select variants and markers for analysis.</p>
+</li>
+<li>
+<p>Use Ctrl (or Cmd on Mac) to select multiple variants or markers.</p>
+</li>
+<li>
+<p>Click the "Start" button to execute the analysis.
+The results will be displayed within the same tab, and users can interact with the plot as needed.</p>
+</li>
+</ol>
+<p>An example output using UMAP is shown below. All other analytical methods follow the same interactive interface and workflow.</p>
+<p><img alt="Analytic Example" src="../Pictures/analytic_technique.png" /></p>
+<h2 id="pca-principal-component-analysis">PCA (Principal Component Analysis)</h2>
+<p>PCA reduces high-dimensional data to a few principal components (linear combinations of your markers) that capture the most variance in the dataset. PCA is mainly used for identifying global trends and dominant signaling variations across cell populations.</p>
+<h2 id="t-sne-t-distributed-stochastic-neighbor-embedding">t-SNE (t-distributed Stochastic Neighbor Embedding)</h2>
+<p>t-SNE maps high-dimensional data into 2D or 3D while preserving local structure (i.e., it keeps similar cells close together). t-SNE identifies distinct signaling states, pathway-specific cell clusters, or treatment responses.</p>
+<h2 id="umap-uniform-manifold-approximation-and-projection">UMAP (Uniform Manifold Approximation and Projection)</h2>
+<p>UMAP is another dimensionality reduction method that preserves both local and global structure in the data. UMAP is similar to t-SNE but often with better preservation of the overall data topology. It is useful for seeing how cell populations transition or relate to each other.</p>
+<h2 id="biexponential-transformation">Biexponential Transformation</h2>
+<p>Biexponential transformation rescales fluorescence data—especially useful for markers with both low and high intensity values (often used in flow cytometry). Biexponential transformation makes plots more interpretable by spreading compressed low-intensity values while compressing high-intensity outliers, enabling better visibility of all cell populations. This technique is ideal for handling skewed fluorescence distributions, especially those with negative values (common after background subtraction or compensation).</p>
 <p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
 
 
