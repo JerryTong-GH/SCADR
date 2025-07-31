@@ -11,8 +11,6 @@ SCADR includes standard regression models such as rLOESS to reveal subtle functi
 - [Installation](installation.md)
 - [Modules](modules.md)
 
-## Example Output
-- [Examples](examples.md)
 
 
 *© Copyright 2025, Jerry Tong, Corbin Glufka*
