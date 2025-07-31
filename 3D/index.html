@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1-3d-plot" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -306,6 +311,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    3D Plot
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -317,6 +335,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-3d-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-3D Plot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-plot-on-2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Plot on 2D
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -428,6 +481,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-3d-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-3D Plot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-plot-on-2d" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Plot on 2D
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -444,8 +523,38 @@
 
   <h1>3D Plot</h1>
 
-<p>The 3D Function Plot in SCADR visualizes how a specific phosphoprotein’s abundance changes across a range of expression levels for two different transfected proteins simultaneously. This allows users to examine the combined effect of two variables on downstream signaling activity.</p>
-<p>It fits a response surface using nonparametric regression (e.g., LOESS) and displays the result as a smooth 3D surface, helping reveal synergistic, additive, or opposing interactions between the two transfected proteins. Users can rotate and zoom the plot for better spatial interpretation.</p>
+<p>The 3D Function Plots in SCADR visualize how the abundance of a specific phosphoprotein changes in response to varying expression levels of two transfected proteins simultaneously. This enables users to examine the combined influence of two independent variables on downstream signaling activity.</p>
+<p>Note: The 3D plot functionality under the 1-3D Plot tab is still under development. This section will be updated once that feature is complete.</p>
+<h2 id="1-3d-plot">1-3D Plot</h2>
+<p>SCADR provides a variety of plot types for single-cell data visualization. These options can be accessed by clicking the <strong>2D Plot Setting button</strong>. The four available plot types are described below:</p>
+<ol>
+<li>
+<p>Scatter Plot
+The Scatter Plot offers a straightforward way to examine the relationship between two variables. Each point corresponds to a single cell, where the x-axis shows the expression level of a transfected gene and the y-axis displays the intensity of a downstream phosphoprotein marker.</p>
+</li>
+<li>
+<p>Bin Scatter Plot
+The Bin Scatter Plot segments the x-axis (expression levels) into user-defined intervals (bins), and then calculates a summary statistic (typically the mean or median) for the marker intensity within each bin.</p>
+</li>
+<li>
+<p>3D Histogram
+The 3D Histogram extends the concept of binning into two dimensions:</p>
+</li>
+</ol>
+<p>X-axis: Expression level</p>
+<p>Y-axis: Marker intensity</p>
+<p>Z-axis (height): The frequency of cells within each bin - this provides a comprehensive view of data distribution across both axes</p>
+<ol>
+<li>Bin Bar Plot
+The Bin Bar Plot presents a bar chart summarizing marker intensity values (mean, median, or quantiles) for each expression bin. This plot simplifies interpretation by reducing the data into clean, digestible bar segments.</li>
+</ol>
+<p>Each of these visualization types helps users investigate how transgene expression relates to downstream signaling activity in single cells. They are designed to handle varying levels of noise, outliers, and data density, offering flexibility for interpreting complex single-cell phosphoproteomic datasets.</p>
+<h2 id="3d-plot-on-2d">3D Plot on 2D</h2>
+<p>The 3D Plot on 2D in SCADR represents three-dimensional single-cell data in a 2D format, using circle size to convey the third dimension. Rather than using depth or color, the size of each circle reflects the cell count within a specific data region. This approach allows users to simultaneously examine relationships between expression and phosphoprotein intensity along with frequency.</p>
+<p>Plot Structure:</p>
+<p>X-axis: Expression level of the transfected protein</p>
+<p>Y-axis: Intensity of the selected downstream marker</p>
+<p>Z-axis (circle size): Number of cells within each expression–intensity bin - larger circles indicate higher cell density in that region.</p>
 <p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
 
 

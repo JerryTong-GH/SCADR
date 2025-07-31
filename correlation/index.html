@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#correlation-plots" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -328,6 +333,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Correlation Grid and Tests
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -339,6 +357,41 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation Plots
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation Tests
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -428,6 +481,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation Plots
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation Tests
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -444,7 +523,24 @@
 
   <h1>Correlation Grid and Tests</h1>
 
-<p>TBF</p>
+<h2 id="correlation-plots">Correlation Plots</h2>
+<p>The Correlation Grid tab allows users to evaluate the relationship between two selected markers within specific variants. It displays both distribution histograms and a correlation scatter plot, enabling users to assess expression trends and co-variation patterns. An example is shown below.</p>
+<p><img alt="Correlation Plot Example" src="../Pictures/expression_plot_example.png" /></p>
+<h2 id="correlation-tests">Correlation Tests</h2>
+<p>Correlation Tests
+The Correlation Test tab allows users to conduct normality and statistical tests to determine whether the expression distributions of each marker follow a normal (Gaussian) distribution. Selecting the appropriate correlation test depends on this normality assessment. The provided normality tables guide users in choosing the correct statistical tools for their data.</p>
+<p>The available normality tests include:</p>
+<p>Kolmogorov-Smirnov</p>
+<p>Lilliefors</p>
+<p>Chi-square</p>
+<p>Anderson-Darling</p>
+<p>Jarque-Bera</p>
+<p>Shapiro-Wilk</p>
+<p>D’Agostino-Pearson</p>
+<p>If a marker fails the normality tests, non-parametric correlation methods (such as Spearman or Kendall) may be more appropriate than Pearson correlation.</p>
+<p>An example of the output is shown below.</p>
+<p><img alt="Correlation Test Example" src="Pictures/expression_Test_example.png" /></p>
+<p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
 
 
 
