@@ -14,6 +14,12 @@ The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profil
 - **Pairwise Correlation and Heatmaps**: SCADR quantifies co-regulation and signaling cross-talk between phosphoproteins, useful for identifying mechanistic insights and variant clustering.
 - **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
 
+## Installation
+You can clone the repository through github:
+```bash
+gh repo clone JerryTong-GH/SCADR
+```
+
 ## Test Cases
 
 As most functions are closely integrated with the app’s GUI, it can be challenging to write automated tests for many of them. While some test cases (related to easier, standalone functions) have been implemented, please feel free to suggest additional tests that could improve coverage.
