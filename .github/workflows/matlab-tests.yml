@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      
+      - name: Debug license env
+        run: echo "MW_PAT is set = ${{ secrets.MW_PAT != '' }}"
+      
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v2
         with:
