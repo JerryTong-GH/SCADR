@@ -13,48 +13,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Debug license secret presence
-        shell: powershell
-        run: |
-          if ("${{ secrets.MW_PAT }}" -ne "") {
-            echo "MW_PAT is set = true"
-          } else {
-            echo "MW_PAT is EMPTY"
-          }
-
+      # ----------------------------
+      # Debug (optional but useful)
+      # ----------------------------
       - name: Check environment
         shell: powershell
         run: |
           whoami
-          echo $env:TEMP
           echo $env:PATH
+          where matlab
           git --version
 
-      # ============================
-      # CRITICAL STEP: ACTIVATE MATLAB
-      # ============================
-      - name: Activate MATLAB login license
-        shell: powershell
-        env:
-          MW_PAT: ${{ secrets.MW_PAT }}
-        run: |
-          $env:MW_PAT = "${{ secrets.MW_PAT }}"
-          matlab -batch "matlab.internal.activate.activateMATLAB"
-
-      # ============================
-      # RUN TESTS
-      # ============================
+      # ----------------------------
+      # Run MATLAB tests
+      # ----------------------------
       - name: Run MATLAB tests
         shell: powershell
         env:
           MW_PAT: ${{ secrets.MW_PAT }}
         run: |
           $env:MW_PAT = "${{ secrets.MW_PAT }}"
-          matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
-          
-          
-      - name: Run tests
-        run: matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
 
+          matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
 
 
