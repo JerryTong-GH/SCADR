@@ -12,34 +12,45 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
-      - name: Debug license env
-        run: echo "MW_PAT is set = ${{ secrets.MW_PAT != '' }}"
+
+      - name: Debug license secret presence
+        shell: powershell
+        run: |
+          if ("${{ secrets.MW_PAT }}" -ne "") {
+            echo "MW_PAT is set = true"
+          } else {
+            echo "MW_PAT is EMPTY"
+          }
 
       - name: Check environment
+        shell: powershell
         run: |
           whoami
-          echo %TEMP%
-          echo %PATH%
+          echo $env:TEMP
+          echo $env:PATH
           git --version
-      
-      - name: Setup MATLAB license (login mode)
-        uses: mathworks/setup-matlab@v2
-        with:
-          release: R2026a
-          products: MATLAB
-        env:
-          MLM_LICENSE_MODE: login
-          MW_PAT: ${{ secrets.MW_PAT }}
-    
-      - name: Set MATLAB licensing
-        run: |
-          echo "MW_PAT=${{ secrets.MW_PAT }}" >> $env:GITHUB_ENV
-      
+
+      # ============================
+      # CRITICAL STEP: ACTIVATE MATLAB
+      # ============================
       - name: Activate MATLAB login license
-        run: matlab -batch "matlab.internal.activate.activateMATLAB"
+        shell: powershell
         env:
           MW_PAT: ${{ secrets.MW_PAT }}
+        run: |
+          $env:MW_PAT = "${{ secrets.MW_PAT }}"
+          matlab -batch "matlab.internal.activate.activateMATLAB"
+
+      # ============================
+      # RUN TESTS
+      # ============================
+      - name: Run MATLAB tests
+        shell: powershell
+        env:
+          MW_PAT: ${{ secrets.MW_PAT }}
+        run: |
+          $env:MW_PAT = "${{ secrets.MW_PAT }}"
+          matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
           
           
       - name: Run tests
