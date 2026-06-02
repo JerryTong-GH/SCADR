@@ -24,6 +24,11 @@ jobs:
           where matlab
           git --version
 
+      - name: Check MATLAB version
+        shell: powershell
+        run: |
+          matlab -batch "ver"
+
       # ----------------------------
       # Run MATLAB tests
       # ----------------------------
