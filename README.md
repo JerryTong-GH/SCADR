@@ -28,9 +28,9 @@ gh repo clone JerryTong-GH/SCADR
 
 As most functions are closely integrated with the app’s GUI, it can be challenging to write automated tests for many of them. While some test cases (related to easier, standalone functions) have been implemented, please feel free to suggest additional tests that could improve coverage.
 
-## Pull Request and Usage
+## Pull Request, Usage and Collaboration
 
-Pull requests are welcome. Please report bugs, as we're still refining this library over time.
+Pull requests are welcome. Please report bugs, as we're still refining this library over time. If you have specific functionalities that you want to implement, please feel free to email Jerry!
 
 ## Extras
 
