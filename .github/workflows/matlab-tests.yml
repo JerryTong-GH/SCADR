@@ -34,7 +34,10 @@ jobs:
         run: |
           echo "MW_PAT=${{ secrets.MW_PAT }}" >> $env:GITHUB_ENV
           
-      - name: Run MATLAB tests
+      - name: Run MATLAB tests with login license
+        env:
+            MW_PAT: ${{ secrets.MW_PAT }}
+            MLM_LICENSE_MODE: login
         run: matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
 
 
