@@ -25,10 +25,10 @@ jobs:
       
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v2
-            with:
-                release: R2026a
-                products: MATLAB
-                install-system-dependencies: true
+        with:
+            release: R2026a
+            products: MATLAB
+            install-system-dependencies: true
                 
       - name: Set MATLAB licensing
         run: |
