@@ -8,7 +8,7 @@
 The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profiles from flow cytometry data. It is focuses on capturing the phosphoprotein profile of each cell so as to examine the impact of gene expression on signaling pathways at a single cell level. The documentation provides a detailed guide to using the software.
 
 ## Documentation
-Documentation: https://jerrytong-gh.github.io/SCADR/
+[View the SCADR GitHub Documentation](https://jerrytong-gh.github.io/SCADR/)
 
 ## Features
 - **Single Cell Resolution**: SCADR analyzes individual cell data rather than population medians, capturing subtle functional differences between variants.
