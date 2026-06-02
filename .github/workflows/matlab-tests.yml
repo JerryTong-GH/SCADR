@@ -29,7 +29,10 @@ jobs:
             release: R2026a
             products: MATLAB
             install-system-dependencies: true
-      
+      - name: Set MATLAB licensing
+        run: |
+          echo "MW_PAT=${{ secrets.MW_PAT }}" >> $env:GITHUB_ENV
+          
       - name: Run MATLAB tests
         run: matlab -batch "addpath(genpath('Development')); results = runtests('Tests'); exit(~all([results.Passed]));"
 
