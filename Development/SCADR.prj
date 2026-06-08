@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\Jerry\Desktop\SCiYA\App development files\SCADR.prj" location="C:\Users\Jerry\Desktop\SCiYA\App development files" name="SCADR" preferred-package-location="C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration file="C:\Users\jerry\Documents\GitHub\SCiYA\Development\SCADR.prj" location="C:\Users\jerry\Documents\GitHub\SCiYA\Development" name="SCADR" preferred-package-location="C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>SCADR</param.appname>
     <param.icon />
     <param.icons />
@@ -7,15 +7,14 @@
     <param.authnamewatermark>Haas Lab</param.authnamewatermark>
     <param.email>kurt.haas@ubc.ca</param.email>
     <param.company>Haas Lab</param.company>
-    <param.summary>Single cell analysis app
-INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant admin privileges to write files).</param.summary>
-    <param.description>INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant admin privileges to write files).</param.description>
+    <param.summary>SCADR: Single Cell Analytics for Dose Response Application</param.summary>
+    <param.description>Please install SCADR in a location that does not require constant administrator privileges to write files. The Documents folder is a good default choice. By default, the application will be installed under Program Files/SCADR.</param.description>
     <param.screenshot>${PROJECT_ROOT}\Application Resources\Toolbar Images\App Logo Corbin.jpg</param.screenshot>
     <param.guid />
-    <param.installpath.string>\Haas Lab\SCADR\</param.installpath.string>
+    <param.installpath.string>SCADR</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo>${PROJECT_ROOT}\Application Resources\Toolbar Images\App install logo.png</param.logo>
-    <param.install.notes>INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant admin privileges to write files).</param.install.notes>
+    <param.install.notes>Please navigate to the Program Files/SCADR/application folder and run the SCADR.exe executable. We highly recommend creating a desktop shortcut for SCADR so the application files remain on the back end.</param.install.notes>
     <param.target.install.notes />
     <param.intermediate>C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_testing</param.intermediate>
     <param.files.only>C:\Users\Jerry\Desktop\SCiYA\App installation files\SCADR\for_redistribution_files_only</param.files.only>
@@ -42,13 +41,14 @@ INSTALL IN DOCUMENTS FOLDER (or somewhere else which does not require constant a
 	 
  Input Arguments 
 	 -?  print help on how to use the application 
-	 input arguments</param.help.text>
+	 input arguments 
+ Description 
+ 	 Please install SCADR in a location that does not require constant administrator privileges to write files. The Documents folder is a good default choice. By default, the application will be installed under Program Files/SCADR.</param.help.text>
     <unset>
       <param.icon />
       <param.icons />
       <param.version />
       <param.guid />
-      <param.installpath.string />
       <param.installpath.combo />
       <param.target.install.notes />
       <param.enable.clean.build />
