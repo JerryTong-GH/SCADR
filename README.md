@@ -25,13 +25,13 @@ After downloading, feel free to extract the software to a folder of your choice.
 
 After extraction, please navigate to the **Installation** folder and double-click the `SCADR_Installer.exe` executable file. SCADR will be installed after you follow the on-screen prompts.
 
-If you would like to keep the code up to date, I highly recommend installing the GitHub Desktop app and cloning the repository using:
+If you would like to keep the code up to date, I highly recommend installing the GitHub Desktop app (Link: [GitHub Desktop](https://desktop.github.com/download/)) and cloning the repository using:
 
 ```bash
 gh repo clone JerryTong-GH/SCADR
 ```
 
-This allows you to pull updates to the repository in a manageable way.
+This allows you to pull updates to the repository in a manageable way using the GitHub Desktop app.
 
 
 ## Test Cases
