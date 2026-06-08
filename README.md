@@ -19,7 +19,7 @@ The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profil
 - **Data Transformation**: SCADR includes commonly used algorithms for data transformation such as PCA, t-SNE, UMAP, and bi-exp scaling, improving visualization and interpretation of variant-specific signaling signatures in flow cytometry data with a wide dynamic range.
 
 ## Installation
-[Please click on this to download the project as a ZIP.](https://github.com/JerryTong-GH/SCADR/main.zip)
+[Please click on this to download the project as a ZIP.](https://github.com/JerryTong-GH/SCADR/archive/refs/heads/main.zip)
 
 After downloading, feel free to extract the software to a folder of your choice. Extracting it to your Documents folder is highly recommended.
 
