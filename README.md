@@ -23,7 +23,7 @@ The **SCADR** Software analyzes dose-dependent single-cell phosphoprotein profil
 
 After downloading, feel free to extract the software to a folder of your choice. Extracting it to your Documents folder is highly recommended.
 
-After extraction, please navigate to the **Installation** folder and double-click the `SCADR_Installer` executable file. SCADR will be installed after you follow the on-screen prompts.
+After extraction, please navigate to the **Installation** folder and double-click the `SCADR_Installer.exe` executable file. SCADR will be installed after you follow the on-screen prompts.
 
 If you would like to keep the code up to date, I highly recommend installing the GitHub Desktop app and cloning the repository using:
 
