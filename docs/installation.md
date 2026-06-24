@@ -1,17 +1,19 @@
 The software may still run on earlier versions of MATLAB; however, full functionality and stability cannot be guaranteed if older versions of add-ons/matlab are used. 
 
-All installation tests have been conducted using MATLAB version 2022b or later. Before installing SCADR, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
+All installation tests have been conducted using MATLAB version 2022b or later. 
+
+There are two ways of using/installing SCADR:
+
+## Using SCADR as a Developer
+This installation mode is intended for users who wish to modify or extend SCADR’s functionality or user interface. It gives full access to the underlying code, making it ideal for developers looking to adapt SCADR to their specific research or analysis needs.
+
+To use SCADR through MATLAB, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
 
 - *Image Processing Toolbox* (v22.2 or newer)
 
 - *Mapping Toolbox* (v22.2 or newer)
 
 - *Statistics and Machine Learning Toolbox* (v22.2 or newer)
-
-There are two ways of using/installing SCADR:
-
-## Using SCADR as a Developer
-This installation mode is intended for users who wish to modify or extend SCADR’s functionality or user interface. It gives full access to the underlying code, making it ideal for developers looking to adapt SCADR to their specific research or analysis needs.
 
 Steps to Set Up SCADR in Development Mode:
 
