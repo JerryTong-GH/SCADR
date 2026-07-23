@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../modules/">
+        <link rel="prev" href="../analysisplot/">
       
       
-        <link rel="next" href="../qc/">
+        <link rel="next" href="../contribution/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Loading Data - SCADR Documentation</title>
+        <title>AGNES - SCADR Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loading-and-visualizing-data" class="md-skip">
+        <a href="#agnes" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Loading Data
+              AGNES
             
           </span>
         </div>
@@ -274,35 +274,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Loading Data
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../load-data/" class="md-nav__link">
         
   
   
@@ -318,46 +293,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#loading-and-visualizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Loading and Visualizing Data
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#loading-marker-channels" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Loading Marker Channels
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -501,10 +436,35 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../agnes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AGNES
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -520,6 +480,46 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#agnes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AGNES
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-agnes-in-scadr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use AGNES in SCADR
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -576,10 +576,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loading-and-visualizing-data" class="md-nav__link">
+  <a href="#agnes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Loading and Visualizing Data
+        AGNES
       
     </span>
   </a>
@@ -587,10 +587,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#loading-marker-channels" class="md-nav__link">
+  <a href="#how-to-use-agnes-in-scadr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Loading Marker Channels
+        How to use AGNES in SCADR
       
     </span>
   </a>
@@ -614,19 +614,17 @@
 
 
 
-  <h1>Loading Data</h1>
+  <h1>AGNES</h1>
 
-<p>Once the software has finished setting up, the initial view will appear as shown below:</p>
-<p><img alt="Loading Data Page" src="../Pictures/load_data.png" /></p>
-<h2 id="loading-and-visualizing-data">Loading and Visualizing Data</h2>
-<p>To load data into the software, click on the <strong>Load in a dataset / library of datasets</strong> button, highlighted in the image above. You will first be prompted to select the location of your dataset. It is strongly recommended that the input data be stored in the input folder provided by the GitHub repository or included during installation.</p>
-<p>Next, the software will prompt you to select a data template. An example template can be found in the “Well info file template” at the top of this GitHub repository. You may select that file during this step. If you choose to skip this step, the software will attempt to automatically detect the structure of the input files.</p>
-<p>Once the data is loaded, you can explore it using the user interface panels on the right side of the screen.</p>
-<p><img alt="Data Viewer Example" src="../Pictures/data_viewer.png" /></p>
-<h2 id="loading-marker-channels">Loading Marker Channels</h2>
-<p>After loading the data, navigate to the Define Channels tab (shown below), and click on Add all available markers to import the channel information into the software.</p>
-<p><img alt="Add Channel" src="../Pictures/add_channels.png" /></p>
-<p><em>© Copyright 2025, Jerry Tong, Corbin Glufka</em></p>
+<h2 id="agnes">AGNES</h2>
+<p>AGNES (Agglomerative Nesting) is a hierarchical clustering method that starts with each item as its own cluster and repeatedly merges the most similar clusters. The result is a dendrogram that shows how observations group together at different linkage distances.</p>
+<h2 id="how-to-use-agnes-in-scadr">How to use AGNES in SCADR</h2>
+<p>Click the file-selection box to open a prompt and choose the Excel file to analyze with AGNES.</p>
+<p><img alt="Correlation Plot Example" src="../Pictures/correlation_plot_example.png" /></p>
+<p>After the file has been imported, run AGNES to generate the hierarchical clustering plots for the unique X- and Y-axis labels.</p>
+<p><img alt="Correlation Plot Example" src="../Pictures/correlation_plot_example.png" /></p>
+<p>Click "Save AGNES Results" to select an output folder. The application will save both clustering plots and an Excel workbook containing the processed data, pairwise distances, similarity scores, linkage trees, and label ordering used to generate the figures.</p>
+<p><img alt="Correlation Plot Example" src="../Pictures/correlation_plot_example.png" /></p>
 
 
 
