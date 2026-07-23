@@ -10,6 +10,7 @@ nav:
   - Correlation Grid and Tests: correlation.md
   - Expression vs Marker Correlation: expressioncorrelation.md
   - tSNE, UMAP, PCA, and Biexponential Transformation: analysisplot.md
+  - AGNES: agnes.md
   - Licensing and Contribution: contribution.md
 
 
