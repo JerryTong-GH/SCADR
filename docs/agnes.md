@@ -14,5 +14,5 @@ After the file has been imported, run AGNES to generate the hierarchical cluster
 
 Click "Save AGNES Results" to select an output folder. The application will save both clustering plots and an Excel workbook containing the processed data, pairwise distances, similarity scores, linkage trees, and label ordering used to generate the figures.
 
-![AGNES_Excel_Exmaple](agnes_excel_example.png)
+![AGNES_Excel_Example](agnes_excel_example.png)
 
