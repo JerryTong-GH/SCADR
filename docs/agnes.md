@@ -1,55 +1,18 @@
-The software may still run on earlier versions of MATLAB; however, full functionality and stability cannot be guaranteed if older versions of add-ons/matlab are used. 
+## AGNES
 
-All installation tests have been conducted using MATLAB version 2022b or later. 
+AGNES (Agglomerative Nesting) is a hierarchical clustering method that starts with each item as its own cluster and repeatedly merges the most similar clusters. The result is a dendrogram that shows how observations group together at different linkage distances.
 
-There are two ways of using/installing SCADR:
+## How to use AGNES in SCADR
 
-## Using SCADR as a Developer
-This installation mode is intended for users who wish to modify or extend SCADR’s functionality or user interface. It gives full access to the underlying code, making it ideal for developers looking to adapt SCADR to their specific research or analysis needs.
+Click the file-selection box to open a prompt and choose the Excel file to analyze with AGNES.
 
-To use SCADR through MATLAB, please ensure that the following MATLAB add-on toolboxes are installed. These can be downloaded for free via the Add-On Explorer within MATLAB:
+![Correlation Plot Example](Pictures/correlation_plot_example.png)
 
-- *Image Processing Toolbox* (v22.2 or newer)
+After the file has been imported, run AGNES to generate the hierarchical clustering plots for the unique X- and Y-axis labels.
 
-- *Mapping Toolbox* (v22.2 or newer)
+![Correlation Plot Example](Pictures/correlation_plot_example.png)
 
-- *Statistics and Machine Learning Toolbox* (v22.2 or newer)
+Click "Save AGNES Results" to select an output folder. The application will save both clustering plots and an Excel workbook containing the processed data, pairwise distances, similarity scores, linkage trees, and label ordering used to generate the figures.
 
-Steps to Set Up SCADR in Development Mode:
+![Correlation Plot Example](Pictures/correlation_plot_example.png)
 
-1. Open MATLAB and navigate to the **Development** folder located within the SCADR GitHub repository.
-   
-2. Select all folders inside the **Development** directory.
-   
-3. Right-click on the selected folders and choose:
-   
-4. Add to Path → Selected Folders and Subfolders.
-   
-5. Locate and double-click the file **SCADR.mlapp**.
-
-Note: If MATLAB does not open the file using App Designer, install the App Designer add-on from the Add-Ons tab.
-
-To modify the code, click **Code View** (top-right of the App Designer window).
-To launch the software in UI mode, click the **Run** button located beneath the **Canvas** tab.
-
-## Using SCADR as a General User (Recommended)
-This installation method allows you to use SCADR without directly modifying its source code. It is ideal for users who want a stable, ready-to-use version of the software without the risk of unintentionally breaking any functionality. While code editing is not supported in this mode, the installation is more secure and can be easily reinstalled if needed.
-
-Steps:
-
-1. Navigate to the Installation Files directory on the main page of the SCADR repository.
-   
-2. Double-click on the **SCADR_Installer**.
-   
-3. Follow the on-screen prompts to complete the installation process.
-   
-Note: For a successful installation, it is recommended to run the installer as an **administrator**.
-
-## Datasets Included in the Library
-By default, SCADR includes the dataset used in the publication:
-“Multiplex phosphoflow analysis with a single-cell dosage response platform (SCADR) facilitates deciphering lipid and protein phosphatase–dependent PTEN functions.”
-
-Several figures from this study are available in the Demo section as reference examples.
-
-
-*© Copyright 2025, Jerry Tong, Corbin Glufka*
