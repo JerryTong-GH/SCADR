@@ -6,13 +6,13 @@ AGNES (Agglomerative Nesting) is a hierarchical clustering method that starts wi
 
 Click the file-selection box to open a prompt and choose the Excel file to analyze with AGNES.
 
-![Correlation Plot Example](Pictures/correlation_plot_example.png)
+![AGNES_Box_Example](Pictures/agnes_box_example.png)
 
 After the file has been imported, run AGNES to generate the hierarchical clustering plots for the unique X- and Y-axis labels.
 
-![Correlation Plot Example](Pictures/correlation_plot_example.png)
+![AGNES_Plot_Example](Pictures/agnes_plot_example.png)
 
 Click "Save AGNES Results" to select an output folder. The application will save both clustering plots and an Excel workbook containing the processed data, pairwise distances, similarity scores, linkage trees, and label ordering used to generate the figures.
 
-![Correlation Plot Example](Pictures/correlation_plot_example.png)
+![AGNES_Excel_Example](agnes_excel_example.png)
 
